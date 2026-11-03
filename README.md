@@ -15,7 +15,7 @@ that is published.
 | Runtime | Tag | Source |
 | --- | --- | --- |
 | Linux x86_64 | `0.1.0-linux-amd64.5` | [`0.1.0-linux-amd64.5/`](0.1.0-linux-amd64.5/SOURCES.md) and the release [`0.1.0-linux-amd64.5`](../../releases/tag/0.1.0-linux-amd64.5) |
-| macOS (Apple silicon) | `0.1.0-macos-arm64.1` | to follow |
+| macOS (Apple silicon) | `0.1.0-macos-arm64.1` | [`0.1.0-macos-arm64.1/`](0.1.0-macos-arm64.1/SOURCES.md) and the release [`0.1.0-macos-arm64.1`](../../releases/tag/0.1.0-macos-arm64.1) |
 
 For each runtime:
 - **`SOURCES.md`** lists every component, its licence and version, and the
