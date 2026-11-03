@@ -42,15 +42,12 @@ Docker's packages in the full image are Apache-2.0 and come from
 [Docker's own repository](https://download.docker.com/linux/ubuntu); they
 are listed in `SOURCES.md` with their upstream projects.
 
-## Written offer
+## Getting the source
 
-If something here is missing or a link stops working, write to
-kunal.kushwaha@gmail.com and ask for the complete corresponding source code
-of any GPL or LGPL component of a Koala runtime. You will get it for no more
-than the cost of sending it. This offer is valid for three years after we
-last distribute that runtime, and also covers the Koala runtimes published
-before this repository existed (`0.1.0-preview.1`, `0.1.0-preview.11`,
-`0.1.0-linux-amd64.1` to `.4`).
+Each runtime's source code is in this repository's release named after the
+runtime: download the files listed there and check them with
+`sha256sum -c SHA256SUMS`. If a file is missing or a link stops working,
+open an issue in this repository.
 
 ## Licence
 
