@@ -1,0 +1,13 @@
+[Unit]
+Description=Koala managed Docker data
+Before=docker.service
+After=local-fs-pre.target
+
+[Mount]
+What=/var/lib/koala-engine/docker
+Where=/var/lib/docker
+Type=none
+Options=bind
+
+[Install]
+WantedBy=local-fs.target

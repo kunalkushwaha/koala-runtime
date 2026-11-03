@@ -1,0 +1,59 @@
+# koala-runtime
+
+The source code for the open-source parts of the
+[Koala](https://github.com/kunalkushwaha/homebrew-koala) VM runtimes.
+
+Koala runs Linux VMs on macOS and Linux. Each VM boots a **runtime**: a
+Linux kernel and disk images, published as signed bundles at
+`ghcr.io/kunalkushwaha/koala-runtime`. The runtimes contain software under the
+GNU GPL and LGPL (the Linux kernel, busybox, Ubuntu's and Alpine's
+packages). This repository gives you the matching source for each runtime
+that is published.
+
+## What is here
+
+| Runtime | Tag | Source |
+| --- | --- | --- |
+| Linux x86_64 | `0.1.0-linux-amd64.5` | [`0.1.0-linux-amd64.5/`](0.1.0-linux-amd64.5/SOURCES.md) and the release [`0.1.0-linux-amd64.5`](../../releases/tag/0.1.0-linux-amd64.5) |
+| macOS (Apple silicon) | `0.1.0-macos-arm64.1` | to follow |
+
+For each runtime:
+- **`SOURCES.md`** lists every component, its licence and version, and the
+  file that holds its source.
+- **`manifest.json`** is the same list for scripts, with each file's
+  SHA-256.
+- **The release** of the same name holds the source files themselves. The
+  largest files are split into parts; rejoin them with `cat` (see the
+  release's notes).
+
+Each runtime's source set holds:
+- **The Linux kernels:** the kernel.org tarball (Linux 6.18.60), each
+  kernel's exact build configuration, and the scripts and configuration
+  fragments that build them. Rebuilt with these, each kernel is
+  byte-identical to the one in the runtime.
+- **Ubuntu packages:** the Ubuntu source package of every package in the
+  full VM's disk image, at the installed version.
+- **Alpine packages:** for the small control filesystem, each package's
+  build recipe from Alpine's `aports` and the upstream files it uses.
+- **Koala's guest helpers** (Apache-2.0), which are statically linked with
+  glibc (LGPL-2.1).
+
+Docker's packages in the full image are Apache-2.0 and come from
+[Docker's own repository](https://download.docker.com/linux/ubuntu); they
+are listed in `SOURCES.md` with their upstream projects.
+
+## Written offer
+
+If something here is missing or a link stops working, write to
+kunal.kushwaha@gmail.com and ask for the complete corresponding source code
+of any GPL or LGPL component of a Koala runtime. You will get it for no more
+than the cost of sending it. This offer is valid for three years after we
+last distribute that runtime, and also covers the Koala runtimes published
+before this repository existed (`0.1.0-preview.1`, `0.1.0-preview.11`,
+`0.1.0-linux-amd64.1` to `.4`).
+
+## Licence
+
+Each component keeps its own licence, given in `SOURCES.md` and in the
+source files themselves. The files written for Koala (the build scripts and
+fragments, the guest helpers) are Apache-2.0.

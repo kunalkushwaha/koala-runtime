@@ -1,0 +1,13 @@
+# L02B (ADR 0006): Koala's additions to containerization 0.47.0's config-x86_64.
+# Without them, a guest under Cloud Hypervisor sees one vCPU however many are
+# configured ("ACPI: x2apic entry ignored": CH describes vCPUs with x2APIC
+# MADT entries), and AMD hosts run with generic CPU support ("vendor_id
+# 'AuthenticAMD' unknown"). Measured on 2026-10-21; see docs/tasks/L02B.md.
+CONFIG_CPU_SUP_AMD=y
+CONFIG_HYPERVISOR_GUEST=y
+CONFIG_PARAVIRT=y
+CONFIG_KVM_GUEST=y
+CONFIG_X86_X2APIC=y
+# R05B3: Cloud Hypervisor boots the uncompressed ELF through PVH, without the
+# bzImage's self-decompression (~100 ms; L18's K1).
+CONFIG_PVH=y

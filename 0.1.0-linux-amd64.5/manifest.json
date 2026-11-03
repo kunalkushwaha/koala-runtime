@@ -1,0 +1,1900 @@
+{
+  "alpine": {
+    "image": "ghcr.io/linuxcontainers/alpine@sha256:28a33e0390da2b341d05e53803c6766977039baedfc8a82a4910d5acc4755b66",
+    "packages": [
+      {
+        "aportVersion": "3.6.5-r0",
+        "licenses": "GPL-2.0-only",
+        "origin": "alpine-baselayout",
+        "package": "alpine-baselayout",
+        "version": "3.6.5-r0"
+      },
+      {
+        "aportVersion": "3.6.5-r0",
+        "licenses": "GPL-2.0-only",
+        "origin": "alpine-baselayout",
+        "package": "alpine-baselayout-data",
+        "version": "3.6.5-r0"
+      },
+      {
+        "aportVersion": "2.4-r1",
+        "licenses": "MIT",
+        "origin": "alpine-keys",
+        "package": "alpine-keys",
+        "version": "2.4-r1"
+      },
+      {
+        "aportVersion": "2.14.4-r1",
+        "licenses": "GPL-2.0-only",
+        "origin": "apk-tools",
+        "package": "apk-tools",
+        "version": "2.14.4-r1"
+      },
+      {
+        "aportVersion": "1.36.1-r29",
+        "licenses": "GPL-2.0-only",
+        "origin": "busybox",
+        "package": "busybox",
+        "version": "1.36.1-r29"
+      },
+      {
+        "aportVersion": "1.36.1-r29",
+        "licenses": "GPL-2.0-only",
+        "origin": "busybox",
+        "package": "busybox-binsh",
+        "version": "1.36.1-r29"
+      },
+      {
+        "aportVersion": "20241121-r1",
+        "licenses": "MPL-2.0 AND MIT",
+        "origin": "ca-certificates",
+        "package": "ca-certificates-bundle",
+        "version": "20241121-r1"
+      },
+      {
+        "aportVersion": "3.3.3-r0",
+        "licenses": "Apache-2.0",
+        "origin": "openssl",
+        "package": "libcrypto3",
+        "version": "3.3.3-r0"
+      },
+      {
+        "aportVersion": "3.3.3-r0",
+        "licenses": "Apache-2.0",
+        "origin": "openssl",
+        "package": "libssl3",
+        "version": "3.3.3-r0"
+      },
+      {
+        "aportVersion": "1.2.5-r1",
+        "licenses": "MIT",
+        "origin": "musl",
+        "package": "musl",
+        "version": "1.2.5-r1"
+      },
+      {
+        "aportVersion": "1.2.5-r1",
+        "licenses": "MIT AND BSD-2-Clause AND GPL-2.0-or-later",
+        "origin": "musl",
+        "package": "musl-utils",
+        "version": "1.2.5-r1"
+      },
+      {
+        "aportVersion": "1.3.7-r2",
+        "licenses": "GPL-2.0-only",
+        "origin": "pax-utils",
+        "package": "scanelf",
+        "version": "1.3.7-r2"
+      },
+      {
+        "aportVersion": "1.36.1-r29",
+        "licenses": "GPL-2.0-only",
+        "origin": "busybox",
+        "package": "ssl_client",
+        "version": "1.36.1-r29"
+      },
+      {
+        "aportVersion": "1.3.1-r1",
+        "licenses": "Zlib",
+        "origin": "zlib",
+        "package": "zlib",
+        "version": "1.3.1-r1"
+      }
+    ],
+    "release": "3.20.6"
+  },
+  "files": {
+    "alpine/alpine-baselayout/20locale.sh": "284a6ef56ab97a13a777c6b01ae14f2cc3d2b7a29c19e750e622e70cc3c73186",
+    "alpine/alpine-baselayout/APKBUILD": "4c647bb72a8bf91ce727507402c6fe79e4f97a26627519b6d815512d8e02fb54",
+    "alpine/alpine-baselayout/PKGVER": "5eb512dd8bab82f0431eaa91ecf54bca1af36bea693cc39510b6b72055591b84",
+    "alpine/alpine-baselayout/SHA512SUMS": "6f18f5faefdb702d0e3739d67c0e43b021c0ce2ff39c4f841aa21cf597fd0def",
+    "alpine/alpine-baselayout/aliases.conf": "3ebaba946f213670170c7d69949f690a3854553bd0b1560f1d980cba4c83a942",
+    "alpine/alpine-baselayout/alpine-baselayout.post-install": "dd30b63bfbe4f7d8085f57840e15b84015b3518d6f282a3e0924f73a61000016",
+    "alpine/alpine-baselayout/alpine-baselayout.post-upgrade": "dd30b63bfbe4f7d8085f57840e15b84015b3518d6f282a3e0924f73a61000016",
+    "alpine/alpine-baselayout/alpine-baselayout.pre-install": "28ecff91a36f438ca26bc8cc08d857863378aa94eab399a1f413e52501b86f85",
+    "alpine/alpine-baselayout/alpine-baselayout.pre-upgrade": "c52791ea19cd2395d28fce28870d9f7ff4cb321b20601179155ea1cc99e71e1e",
+    "alpine/alpine-baselayout/blacklist.conf": "5cd46031fc7dc7186e67c97fd34780597de4ebff51dbe41eba27220fe5e0d866",
+    "alpine/alpine-baselayout/color_prompt.sh.disabled": "ba24425c6864a5d17fa0fdaf914c4d21419e47c4d62080c33830af059fe46617",
+    "alpine/alpine-baselayout/crontab": "575d810a9fae5f2f0671c9b2c0ce973e46c7207fbe5cb8d1b0d1836a6a0470e3",
+    "alpine/alpine-baselayout/group": "6fb6ab5a5526e6f4896b70c7e3c350fd475158a1f0d7b5fc0f3f9bd57f1c3be8",
+    "alpine/alpine-baselayout/i386.conf": "6c46c4cbfb8b7594f19eb94801a350fa2221ae9ac5239a8819d15555caa76ae8",
+    "alpine/alpine-baselayout/inittab": "7326d8ad56bf5fea63b1ca516a747ff6e6723e25ae84a93c31620b03de6c001d",
+    "alpine/alpine-baselayout/kms.conf": "50467fa732f809f3a2bb5738628765c5f895c3a237e1c1ad09f85d41fd9ca7c5",
+    "alpine/alpine-baselayout/passwd": "31a94f06f17bc3b9085fccab1d0fa6ee9e79c4a1e4d91f617fa5de95863be015",
+    "alpine/alpine-baselayout/profile": "87e8643d3ce156de0c09370d4d39446f30bd00d264bea248abc191c4d7b9df3e",
+    "alpine/alpine-baselayout/protocols-6.4": "4959498abbadaa1e50894a266f8d0d94500101cfe5b5f09dcad82e9d5bdfab46",
+    "alpine/alpine-baselayout/services-6.4": "f6183055fd949f9c53d49ee620f85d0150123ea691d25ed1bba0c641b4ee2f48",
+    "alpine/alpine-keys/APKBUILD": "25cee7fa37277c0542da0dd9b5470ba403f338e19c19d7e6d56f2c5a3f52d946",
+    "alpine/alpine-keys/PKGVER": "2e58130cb9cd38cb9c1146ba3a6f7d5a442da8c00c3690b842f8ba3beda66105",
+    "alpine/alpine-keys/SHA512SUMS": "2f8e7c1e6798a60244d3943e4f437a35730ee29ac424b3d35bb428f8e4643acd",
+    "alpine/alpine-keys/alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub": "9c102bcc376af1498d549b77bdbfa815ae86faa1d2d82f040e616b18ef2df2d4",
+    "alpine/alpine-keys/alpine-devel@lists.alpinelinux.org-5243ef4b.rsa.pub": "ebf31683b56410ecc4c00acd9f6e2839e237a3b62b5ae7ef686705c7ba0396a9",
+    "alpine/alpine-keys/alpine-devel@lists.alpinelinux.org-524d27bb.rsa.pub": "1bb2a846c0ea4ca9d0e7862f970863857fc33c32f5506098c636a62a726a847b",
+    "alpine/alpine-keys/alpine-devel@lists.alpinelinux.org-5261cecb.rsa.pub": "12f899e55a7691225603d6fb3324940fc51cd7f133e7ead788663c2b7eecb00c",
+    "alpine/alpine-keys/alpine-devel@lists.alpinelinux.org-58199dcc.rsa.pub": "73867d92083f2f8ab899a26ccda7ef63dfaa0032a938620eda605558958a8041",
+    "alpine/alpine-keys/alpine-devel@lists.alpinelinux.org-58cbb476.rsa.pub": "9a4cd858d9710963848e6d5f555325dc199d1c952b01cf6e64da2c15deedbd97",
+    "alpine/alpine-keys/alpine-devel@lists.alpinelinux.org-58e4f17d.rsa.pub": "780b3ed41786772cbc7b68136546fa3f897f28a23b30c72dde6225319c44cfff",
+    "alpine/alpine-keys/alpine-devel@lists.alpinelinux.org-5e69ca50.rsa.pub": "59c01c57b446633249f67c04b115dd6787f4378f183dff2bbf65406df93f176d",
+    "alpine/alpine-keys/alpine-devel@lists.alpinelinux.org-60ac2099.rsa.pub": "db0b49163f07ffba64a5ca198bcf1688610b0bd1f0d8d5afeaf78559d73f2278",
+    "alpine/alpine-keys/alpine-devel@lists.alpinelinux.org-6165ee59.rsa.pub": "207e4696d3c05f7cb05966aee557307151f1f00217af4143c1bcaf33b8df733f",
+    "alpine/alpine-keys/alpine-devel@lists.alpinelinux.org-61666e3f.rsa.pub": "128d34d4aec39b0daedea8163cd8dc24dff36fd3d848630ab97eeb1d3084bbb3",
+    "alpine/alpine-keys/alpine-devel@lists.alpinelinux.org-616a9724.rsa.pub": "10877cce0a935e46ad88cb79e174a2491680508eccda08e92bf04fb9bf37fbc1",
+    "alpine/alpine-keys/alpine-devel@lists.alpinelinux.org-616abc23.rsa.pub": "4a095a9daca86da496a3cd9adcd95ee2197fdbeb84638656d469f05a4d740751",
+    "alpine/alpine-keys/alpine-devel@lists.alpinelinux.org-616ac3bc.rsa.pub": "0caf5662fde45616d88cfd7021b7bda269a2fcaf311e51c48945a967a609ec0b",
+    "alpine/alpine-keys/alpine-devel@lists.alpinelinux.org-616adfeb.rsa.pub": "ebe717d228555aa58133c202314a451f81e71f174781fd7ff8d8970d6cfa60da",
+    "alpine/alpine-keys/alpine-devel@lists.alpinelinux.org-616ae350.rsa.pub": "d11f6b21c61b4274e182eb888883a8ba8acdbf820dcc7a6d82a7d9fc2fd2836d",
+    "alpine/alpine-keys/alpine-devel@lists.alpinelinux.org-616db30d.rsa.pub": "40a216cbd163f22e5f16a9e0929de7cde221b9cbae8e36aa368b1e128afe0a31",
+    "alpine/apk-tools/APKBUILD": "2a1d40927202b0f3c3a1fe8212573117182d6389926337ad160fa6aa42c82626",
+    "alpine/apk-tools/PKGVER": "23131ae7a7024e384fede94f416e44eef5429fc20a02ee4096b21ff44d507850",
+    "alpine/apk-tools/SHA512SUMS": "bc2d005c25fe60a95a2f69c1da926400e9d05a7864bca33f69284a2acf417186",
+    "alpine/apk-tools/_apk": "fd8247914334edf07ffc1cf9f52327b3da79c24db8a317a20a51eba5398f1331",
+    "alpine/apk-tools/apk-tools-v2.14.4.tar.gz": "c8ad16bddfae988392ad067a244cfdaf643eb7d6761b73450739585ca76f9a25",
+    "alpine/busybox/0001-awk-fix-use-after-free-CVE-2023-42363.patch": "e23f248ee682f73943c008b0d1b413d598f2288ee9bcc22fb2d00b0fc73894d2",
+    "alpine/busybox/0001-modutils-check-ELF-header-before-calling-finit_modul.patch": "91b37a5bb99bdcdbf61e08a91a06410e43a4962b6c67534a07dc70e074840134",
+    "alpine/busybox/0001-wget-add-header-Accept.patch": "08eeaeac000d5593ffa76aff492e5e99c37ab267b04ac3545270f000a00d886e",
+    "alpine/busybox/0002-adduser-default-to-sbin-nologin-as-shell-for-system-.patch": "dbb3537c25a9686394c39808010045d0236963e4aeefa75805fc48998d02169e",
+    "alpine/busybox/0003-ash-add-built-in-BB_ASH_VERSION-variable.patch": "3b5924762399e367d825da8bec06935317f9d04551382020b9c631cbf7b79877",
+    "alpine/busybox/0004-Avoid-redefined-warnings-when-buiding-with-utmps.patch": "c82108f751ccaa099d2b46181ed7092a5481303a1b8752a957b8ba0726c3bac2",
+    "alpine/busybox/0005-libbb-sockaddr2str-ensure-only-printable-characters-.patch": "98406016140a8ac3286c37ddc6ba97d0eec44486ffdecb00d815419d8a58852f",
+    "alpine/busybox/0006-modinfo-add-k-option-for-kernel-version.patch": "78fe684c1f265105122ebf9da2fd3f2ff034e18f2c061bec007555bbbf4bf908",
+    "alpine/busybox/0007-nologin-Install-applet-to-sbin-instead-of-usr-sbin.patch": "d8e76dfc7afb8eb3951b1dada32e35867ea5dae50028de064db766f87bc6a4d5",
+    "alpine/busybox/0008-pgrep-add-support-for-matching-against-UID-and-RUID.patch": "00d557550158db377fb9a88b99a6c0a5bcd23e746b307100d829e1580bc15252",
+    "alpine/busybox/0009-properly-fix-wget-https-support.patch": "3e7901b05292bdd93e308f76bd3c79eaa0121f4ea021ed2f50613712c012a1b7",
+    "alpine/busybox/0010-sed-check-errors-writing-file-with-sed-i.patch": "d04aeeaad2f5e3756de6a44d1f2f403360f155ff48e52c2e656e7a1e26381c0a",
+    "alpine/busybox/0011-fsck-resolve-LABEL-.-UUID-.-spec-to-device.patch": "3f669791e06c8af5ed31f30d67f95055dfbc633cf0090e5f5a27f6014f5ec8e0",
+    "alpine/busybox/0012-nslookup-sanitize-all-printed-strings-with-printable.patch": "b0024307d336918372169fa1d00a77c65260fcac5ee9ed071c49e1dda63960b2",
+    "alpine/busybox/0013-ash-exec-busybox.static.patch": "be21a558a19478ab435881740b43aa5b40bab50a987e1679abea1c65542ab642",
+    "alpine/busybox/0014-app-location-for-cpio-vi-and-lspci.patch": "243cac8f2545943158fb3640fc02e43bddbdc8d73b40c8d28ddd8297042c95f5",
+    "alpine/busybox/0015-udhcpc-set-default-discover-retries-to-5.patch": "91f9ce378fb95880dbae4c9c3270257cf5411d7d8e820f8de422803ea4f0b043",
+    "alpine/busybox/0016-ping-make-ping-work-without-root-privileges.patch": "688cf7ea70270d1b74101b5b3244ca19a6be8f8262e0e8f98ed4cdb9307b141d",
+    "alpine/busybox/0017-fbsplash-support-console-switching.patch": "bc85994950241b38ad6fe63c1087a3e15ebcc5d5ba9b984d405e8a8a9bad3031",
+    "alpine/busybox/0018-fbsplash-support-image-and-bar-alignment-and-positio.patch": "9f961760c4cefdd93b279248dbb09b43bcbb488b87b477935116a27954c1e8b1",
+    "alpine/busybox/0019-depmod-support-generating-kmod-binary-index-files.patch": "f6e37bf768b1a7f35a4e376a7c6a89e25a9ef683256068f2efd430fa5650f270",
+    "alpine/busybox/0020-Add-flag-for-not-following-symlinks-when-recursing.patch": "6670b0092c21f7ea205c954ff652857c50931229fa02f77f53f3e5f5096f86f6",
+    "alpine/busybox/0021-udhcpc-Don-t-background-if-n-is-given.patch": "4ccec83248ff49115a368527b231d1d5896a3d50e0608dc737023d7d455d5f41",
+    "alpine/busybox/0023-tests-fix-tarball-creation.patch": "a1e713f98da33943f82433f2b9a72452e096fce9bd0e446b359a51e2820df7a8",
+    "alpine/busybox/0024-tests-musl-doesn-t-seem-to-recognize-UTC0-as-a-timez.patch": "34c1c502fd1ac7f48d3ec2466da4da7ec3557101e71d35db953f9c7cc9c23c56",
+    "alpine/busybox/0025-Hackfix-to-disable-HW-acceleration-for-MD5-SHA1-on-x.patch": "f2d96665527c9b073d0b3f0dbe29d3f2602e7f5008744ee6740a2e6f871982cd",
+    "alpine/busybox/0026-lineedit-Handle-SIGWINCH-gracefully.patch": "379d6581c95aa75e69dcf2527e8e499e7bb7a3ce6ffc98c61769d365cdfe23e9",
+    "alpine/busybox/0027-umount-Implement-O-option-to-unmount-by-mount-option.patch": "3e152b4895a054f8e1efff828dec5731336559679266d0b756f5b7d1906a2134",
+    "alpine/busybox/0028-ash-use-after-free-in-bash-pattern-substitution.patch": "752868d250b43950e1b5b6b31d12a810a6d862c33dd821e31faff08c50d3a751",
+    "alpine/busybox/0029-awk-fix-use-after-realloc-CVE-2021-42380-closes-1560.patch": "8c75cbd9c655a4483f94cbe94b4cf21828f79ff7df57aaf0a60f9cd3e3f888d3",
+    "alpine/busybox/0030-shell-avoid-segfault-on-0-0-0-09J-.-Closes-15216.patch": "bcfeb6d11715e739b8434a957023b43df4d364963187f29b36f134dd23220a12",
+    "alpine/busybox/0031-ash-initialize-basepf.buf-in-ash.patch": "42f5c06828f6d8e11b6f58b38712f709171ede57d66cb4d3d25abfe9e833bbf1",
+    "alpine/busybox/0032-install-Fix-chown-resetting-suid-sgid-bits-from-chmo.patch": "0e6a371982b69703a0575b5403694388eb4b09c17436c39747cafc024d8054ae",
+    "alpine/busybox/0033-find-fix-xdev-depth-and-delete.patch": "4db71d5554f1af8bf5566921685bb2ecd2facfd3ce0ce73004ea2bdd71ed32be",
+    "alpine/busybox/0034-udhcp-Avoid-leaking-uninitialized-stale-data.patch": "31de5117c0aee39aef533c9e3c483aa005e2ed82a6b773ea9b1241b97e8aad65",
+    "alpine/busybox/0035-ash-fix-handling-of-single-quoted-strings-in-pattern.patch": "08b86d3667bd58e68d1d416421f8c55ebb7521bd59e1f13412c8650701718e2a",
+    "alpine/busybox/0036-fix-dos-in-math.patch": "f373373fc0a0fd1c7215955959c26ce9afed2e0f1230f5d89c0d13fed003b037",
+    "alpine/busybox/0037-awk.c-fix-CVE-2023-42366-bug-15874.patch": "77ddfa22b2f2a24d16bb31374c48964d90f0ec6614679f85d3fa0b142b4ed1ec",
+    "alpine/busybox/0038-tsort-avoid-use-after-free.patch": "cad375d65fe978f524f0cc15ec54acdce396051f3bfd18a652b57f65ba64a1fd",
+    "alpine/busybox/APKBUILD": "38991fb0b97e3632cde0067fe9f0af038ed2c60f4d016781e32073f65e70e3e4",
+    "alpine/busybox/CVE-2023-42364-CVE-2023-42365.patch": "e5348d92cbfaed8b13b00acfeda7e26779ebb4b220c02a6c3d6d8484b86a79c6",
+    "alpine/busybox/PKGVER": "9019714be55809db5534942b4d64a332b2c170c9e325b6159dd240baea442dc1",
+    "alpine/busybox/SHA512SUMS": "d32365311544583291861e809ddc76efacb51d30ccd4472f2551ac3c305aa52b",
+    "alpine/busybox/acpid.initd": "e9a57d04084733e20b57c4f17e94e8d277ef42f2836f33d96be1250e9672b2a8",
+    "alpine/busybox/acpid.logrotate": "d608a3b7715886b5735def0cc50a6359fd364fac2e0e0a459c588c04be471031",
+    "alpine/busybox/bbsuid.c": "99f6275a53a4005d8f03d87e5361699419b33a52b2b2e2fe1c45e90ab6d51f58",
+    "alpine/busybox/busybox-1.36.1.tar.bz2": "b8cc24c9574d809e7279c3be349795c5d5ceb6fdf19ca709f80cde50e47de314",
+    "alpine/busybox/busybox-extras.post-install": "d9fc2353305920237a46b75c8b184166e6a2f9b6aaba5c96ed80d5234534141c",
+    "alpine/busybox/busybox-extras.pre-deinstall": "921289ece87e6a645d15dcd7fea4cd96e3c1a3ad393f7a98f6cad03bb7266aea",
+    "alpine/busybox/busybox.post-install": "13c120a1c714ecafa7fe1fc748406a89dfffc549118ebce324b53d4bbb4ba75f",
+    "alpine/busybox/busybox.post-upgrade": "361aa82e5a9a18c86624fed675e83ebe0e8b2c30a34e68b356b96d550ff018af",
+    "alpine/busybox/busybox.trigger": "0d63b08ed79c5a2348548852c9674c5c947abe2c97691162bd94a887ebd7d1f0",
+    "alpine/busybox/busyboxconfig": "18d78e185ff0cccd6ccd09f4f78c5780175d78214e16acd1390e4ee85c74346e",
+    "alpine/busybox/busyboxconfig-extras": "e46d6b3455673e1cd81171219c8034c832fd9f550a6c615c7061eb9f9f9db85e",
+    "alpine/busybox/crond.confd": "d058d9ed0824f877b4e88158fe25d71ad76fca4b71542c4c6d7991ee2ecd20f8",
+    "alpine/busybox/crond.initd": "9c7955d5227326ea4a1e55c225606e34d148a831cca3e05b23ad5c58f525c8e0",
+    "alpine/busybox/dad.if-up": "2fd20d1bc67d9ee711990002b24f156635a73f56b8935b2f76592938817fa4e7",
+    "alpine/busybox/default.script": "c4e5a7c4783a7a73dec48dee009ee687015d2de7ff86b269679b95bef2c60e13",
+    "alpine/busybox/dnsd.initd": "4a2b86475c9a3e06729265093cfc71711575089472b68671fe59158999f829c3",
+    "alpine/busybox/httpd.initd": "834284a025ef92049ffb6b67264591de2da0e61b85226eb48bd2eead52dce860",
+    "alpine/busybox/inetd.initd": "bc35f55a9cb9930f5ffbde4cd93037b29a384b155a45a9bd1e1c7ea0a9139138",
+    "alpine/busybox/klogd.confd": "f6cd63d6e5f384dcb01a4906c9a0b6c5923794380235dfe0d79b48a686b03c5d",
+    "alpine/busybox/klogd.initd": "855bf399d4c689dcb8c67a1062e02f1f925297eb18e7ac6942219ab84330a547",
+    "alpine/busybox/loadkmap.confd": "85de66e8a23c60061d8ddf20075ce89ae3cab368a4b995aa863a6e9ec552a0d0",
+    "alpine/busybox/loadkmap.initd": "7778397c308a89ab2b49e22be498051808ee97c2918afca6563638c0d9d6aae3",
+    "alpine/busybox/mdev.initd": "754d37775157f138ed8834e041765ee6aed3a14915a783be480d1f34a6d5783d",
+    "alpine/busybox/ntpd.confd": "4224e5c6b5ffeb815c15f3e9f17ddaa169d4e6b7da169dbd0939fe06dbe8914d",
+    "alpine/busybox/ntpd.initd": "4c7e3370befee65cfeb185f88edbe9aff2d3298426230ce6bd5cc46b2fdc8b41",
+    "alpine/busybox/rdate.confd": "521f5171e20a353e68155620ce7c847c53dcfb7c45ab02d7566efd99cff2dbf2",
+    "alpine/busybox/rdate.initd": "0c6eb4dc269386472f475cf9c549ba53b73aa33f044fbfb3b6bc6dd2574bb341",
+    "alpine/busybox/ssl_client.c": "f36fb83637a12fe0706f828a3e9a4181ac6ed452b59d5d30fcf4dbe1884b8aed",
+    "alpine/busybox/syslog.confd": "47b6e2ae625578903f8cf78410a981ab3103cb6de156a853034c57363bf39e0a",
+    "alpine/busybox/syslog.initd": "f5e471c5bf96a706655b043516403f7aabe2c893f9597e345aa625b6a6375a7f",
+    "alpine/busybox/udhcpc.conf": "5b372209e01cda07c87b8afa6d1ab3d7e8daf18a1f2332d744203a6dc289eb1a",
+    "alpine/busybox/udhcpd.initd": "5c2d05f2cb2a47847c345881ea41de15afe7d1c10f76f8e3cbbadeb0cba4dc50",
+    "alpine/busybox/watchdog.confd": "77f6f9069afdbb477a7e822aa2c7265d64fd22fdd9338bb3beb0cee901d202ce",
+    "alpine/busybox/watchdog.initd": "8bf9f4caa14f2e0a1ded5f76130bfec07c325e89045e5ba6fc10f890270b5752",
+    "alpine/ca-certificates/0001-mk-ca-bundle-remove-CKA_NSS_SERVER_DISTRUST_AFTER-co.patch": "afbb44dd3c87e4702f4ba425677e6ef3d2cc4efe9212e6aecdcf489f0a726b00",
+    "alpine/ca-certificates/APKBUILD": "35fda90bfd030a121c11e7b851609c52d82464e4186eb02a7e35fc9f6f15f1bf",
+    "alpine/ca-certificates/PKGVER": "a8d9249b0a87752b5d5ec452eb96cc845b2dc2c7f0551259c48cf714d954e4ff",
+    "alpine/ca-certificates/SHA512SUMS": "7933dc1ac0c63e6ae43a9ca5b50ce5abcd3c3eaa79f6d4272c1b771bece6ee8e",
+    "alpine/ca-certificates/ca-certificates-20241121.tar.bz2": "6ef7bc56cc0e0b307d99a3c494119686091cc1d4ad08986d68aa089dd00c7788",
+    "alpine/ca-certificates/ca-certificates.post-deinstall": "9523860edc396093bd41270c6e33a569a30657e2ffd729829514ee6b6d54d652",
+    "alpine/ca-certificates/ca-certificates.trigger": "2305936620ac8c79e6dfa9f1dec27626d99121f2ff64c7dca8bc061bacbb02c3",
+    "alpine/musl/APKBUILD": "d69ce4ab8339608a1464207f1dbc1166ef619b665bd4946239e05799e37e9e01",
+    "alpine/musl/CVE-2025-26519.patch": "ab382da2bb5e1cc32d8904be28fb13f8ad3ce813967bd4bf7f5b1c6baee33e17",
+    "alpine/musl/PKGVER": "28557b04010f7a2c3136d1ac53bf6e79e8f0dc93bcdaddb9629ded94774b440f",
+    "alpine/musl/SHA512SUMS": "70b3b08a718bf2ee9aad8749038b581e4848dcf19dd378471577fdc638813c26",
+    "alpine/musl/__stack_chk_fail_local.c": "299a7d75a09de3e2e11e7fb4acc3182e4a14e868093d2f30938fce9bfcff13da",
+    "alpine/musl/getconf.c": "d87d0cbb3690ae2c5d8cc218349fd8278b93855dd625deaf7ae50e320aad247c",
+    "alpine/musl/getent.c": "002c1a216f6bed0f816ab1cfebde94a0b127193ef410c36b2190599983e015b8",
+    "alpine/musl/handle-aux-at_base.patch": "2a65e03b94217063d72fe998e5fb2e25cd01716078a3ba1b0ab574ab205111e6",
+    "alpine/musl/iconv.c": "f79a2930a2e5bb0624321589edf8b889d1e9b603e01e6b7ae214616605b3fdd7",
+    "alpine/musl/ldconfig": "b4a2c06db38742e8c42c3c9838b285a7d8cdac6c091ff3df5ff9a15f1e41b9c7",
+    "alpine/musl/musl-1.2.5.tar.gz": "a9a118bbe84d8764da0ea0d28b3ab3fae8477fc7e4085d90102b8596fc7c75e4",
+    "alpine/openssl/APKBUILD": "b4fafe88442ee4ae46160ee65aa3868fd1c1c9d91bb4a6174fdd1b6ee2947db8",
+    "alpine/openssl/PKGVER": "50920238fa704bcfc9b241bd7b197b10a3f962989c4f7ab973fb99d7639ffc09",
+    "alpine/openssl/SHA512SUMS": "858f970ea8a3f3ba17e9df79eaa9b7b43df94f9bcbc361f9900accd4165477c2",
+    "alpine/openssl/auxv.patch": "9021c054ee1121f4e1c644af57573f048ac9c7ba504b1de79be822f057d0a3ce",
+    "alpine/openssl/man-section.patch": "f497a056a1259d5b5953ce24ba68fb5185ecaeb97d6c7b6f0db1b25b954147ec",
+    "alpine/openssl/openssl-3.3.3.tar.gz": "712590fd20aaa60ec75d778fe5b810d6b829ca7fb1e530577917a131f9105539",
+    "alpine/pax-utils/APKBUILD": "52bf9699aba8716baedb1f7cf59db2744022bcdb3001186c05a148db613cc7e8",
+    "alpine/pax-utils/PKGVER": "baed3cf7f387204b2cb2c9d970b9d2c448e04d3084176458ac9c10b5c58ac59f",
+    "alpine/pax-utils/SHA512SUMS": "e6ea805c8549201afa3f9e37adc090327c9e188fc3032c19b537f58241c80575",
+    "alpine/pax-utils/pax-utils-1.3.7.tar.xz": "108362d29668d25cf7b0cadc63b15a4c1cfc0dbc71adc151b33c5fe7dece939a",
+    "alpine/zlib/APKBUILD": "e6bef389fb5de2e360a2c2a2d090f336fbaf39311e72666c695c19f8bd68a2cb",
+    "alpine/zlib/PKGVER": "9b616c62926f3c47d1c3a83eabda21dd0bf41198fd7bd99b88b98e580e31e45f",
+    "alpine/zlib/SHA512SUMS": "506546bee448c95b5fa2453400ccae983c19debe0b0833f743c4b0d3a7909f5c",
+    "alpine/zlib/zlib-1.3.1.tar.gz": "9a93b2b7dfdac77ceba5a558a580e74667dd6fede4585b91eefb60f03b72df23",
+    "helpers/Dockerfile": "4cff14170147f3d77c7ae3fc1fc717c7ee23d5c68e76949916b012dd600077cf",
+    "helpers/containerd.toml": "a61a828a90c9f20ac9ddfa922a20c470f59191c305d6f50202eacad2808f9d05",
+    "helpers/daemon.json": "2f0194c81c8836e01c0e3b11bb9cf1229ad35871bce3d6cb552eea1e12060397",
+    "helpers/docker.asc": "1500c1f56fa9e26b9b8f42452a553675796ade0807cdce11975eb98170b3a570",
+    "helpers/koala-agent-wrapper": "099bd29af1d641890fd9a66b9dd3e95c0917b4cb7c5cec04af3a1a2bce73c613",
+    "helpers/koala-apt": "c5ab797cdbb665f3df31deb8b6664a96d0bf68ff08cd946791b6c46bdebc232b",
+    "helpers/koala-exec-status.c": "40b3024893f73d6d799e7156d8d73c41fc5fcbd8e859ca09474823233f0f7b34",
+    "helpers/koala-guest-agent.service": "cfe243876d6044906b4a0a6c72eb476ef4396a47bf2e34e755019e28bc739960",
+    "helpers/koala-host-exec.c": "b704c3985a398b1b028374d61775ce7692c89c2b69289c6c562e6b4944a5fe4d",
+    "helpers/koala-host-exec.service": "94d8402cf231e763f74503ea2f4cacb0274af8b13b7edbf1af13df10cb34a35d",
+    "helpers/koala-init.c": "a09ee3eba8530bc6e39e493b6b485d346727d594224454ec7358572d1b0cc449",
+    "helpers/koala-network.service": "14d164d66b1d35f22b2f0ebb9d84b693956ab68cdf09ac5aad26d637c700a5e0",
+    "helpers/koala-sample.service": "805587b4e6c17ea27f04c0b52386db475512a3157aa8c1361a10b0c35c6f5449",
+    "helpers/koala-subreaper.c": "c32550c6be9115c6c559d56fb5dbba1cf0560b1569a55054664622127b8b2834",
+    "helpers/koala-transfer.c": "26f6f46a41cdf76db742c2f5e646f905661a8955bc2c72fe6a2979eb066e5f63",
+    "helpers/packages-builder.txt": "7a6bf5f4130b07e5daf7b0061fcf2bdd2a145747d62e0685687b7d1c45078cd3",
+    "helpers/packages-docker.txt": "49a9e41a7c8fc9b2a1cbd83e824e367cd69c0e3257e4f754e29ea3a526fd3515",
+    "helpers/packages-root.txt": "abba6d17827493b24f7f4d8ce7541d7c622f4c7ef018d21518c09d3ccaeab0a6",
+    "helpers/resolv.conf": "cff3dde2f63818c7356f296b59b451c7a984aefc7fc5e9eb5d4b96513196d7a1",
+    "helpers/runtime-packages-amd64.lock": "9d436716dc2e4a2a6fd1eb23167bf3cf389d7cc963973b779a305a37ac110c87",
+    "helpers/runtime-packages.lock": "8658a9761b2dfaf79dc574807a6372967f4d19eb2c20728efc80fc250e94e203",
+    "helpers/var-lib-containerd.mount": "4a40d80114f1d846f543ddd490f91680e2b3761148b8b7053413ab82e37066f6",
+    "helpers/var-lib-docker.mount": "76ea0195b40f2ae024f4d90c1904a5a6a004ce593f7af5bb378ccc706cffc3d6",
+    "kernel/config-full-x86_64": "d0d4bc368092c83fe965f30fbd374c33167abcdf3e2f33708ace8b25e4514a6b",
+    "kernel/config-lean-x86_64": "b5cdb95c57a5115fa554626b506c7a1f5a13e02c3513ad5e2a687eacc6672324",
+    "kernel/containerization-0.47.0-build.sh": "5e0046a7ed1c8050595c8f4b37056bc86c030d073b9a63b5b5ca2b7fc5da4ed3",
+    "kernel/containerization-0.47.0-config-x86_64": "683681bb8b46e70d0cd57a8213ef326de1161df25b37b8293f3747f309c314d8",
+    "kernel/linux-6.18.60.tar.xz": "3c2f44ef6acc021a7ad444d9a2e6ec1ef488ff09368793d0004a6080f69d621e",
+    "kernel/recipe/build-full-root.sh": "2c5dece2323dcce83609138a797419d05c30cfabdf0bfdcaa7857eee15c3fef1",
+    "kernel/recipe/build-kernel.sh": "f9e6ec120754afe1cb2f5b36650454b99e891a5eb0c0a708c58f2d5adffb492b",
+    "kernel/recipe/build-lean-kernel.sh": "f1f365f528c409da9dffc08613bfeaea734563cba1b57741f066f23d5c175657",
+    "kernel/recipe/kernel-lean-x86_64.fragment": "f1623f9cbb9561ac39b425398d0e51dbc1fb3de865f40df65a57756efa0e0101",
+    "kernel/recipe/kernel-x86_64.fragment": "79b2e1d0a7cd22163a2a541772dcf83e1392652cd536f23d45158c625fd1ace5",
+    "kernel/recipe/kernel/kata-3.17.0/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "kernel/recipe/kernel/kata-3.17.0/README.md": "5f0e70887d8cc4a04d808a63fec9100c71aba037fa843c5902d408afbf3c38e4",
+    "kernel/recipe/kernel/kata-3.17.0/arm64/acpi.conf": "d8ad20e29070fe6178ec1fb075289ddf3d73565d8c7454dd1a263856466ef6b2",
+    "kernel/recipe/kernel/kata-3.17.0/arm64/base.conf": "abf4ab60478797c3d219355188711f286fe4a8a659639f04017a71adba6eafed",
+    "kernel/recipe/kernel/kata-3.17.0/arm64/crypto.conf": "b01228e6aa67ed9e66da1a1413a7d05fc077ce370a087c58d6f5dc0506f1e5c8",
+    "kernel/recipe/kernel/kata-3.17.0/arm64/dt.conf": "5d04d0685a4eb48bf4e567b62ceb227eab5839f6b584a56aa44dca1a721b3dd8",
+    "kernel/recipe/kernel/kata-3.17.0/arm64/erratum.conf": "c896b0f6e139971de065ec934ec8ca0a238e2cc1aa4cfdcdf119f95d9889842d",
+    "kernel/recipe/kernel/kata-3.17.0/arm64/network.conf": "4938654ad53b384d660e930a833b5cf693294b39b14f9430c60c3df07b9da362",
+    "kernel/recipe/kernel/kata-3.17.0/arm64/pci.conf": "d1ba8e4a7f1659b22986b1f69d323055df44c2c4d066af4439f16ec718e1a3fc",
+    "kernel/recipe/kernel/kata-3.17.0/arm64/ptp.conf": "801409f40bff0539b7bcbf7c3809ded8fd6c22079b2e9e139086fce42a9917db",
+    "kernel/recipe/kernel/kata-3.17.0/arm64/rtc.conf": "540422fb49f68d607a8274008818ca7035e6795ade21b9eeca0a8113957813dc",
+    "kernel/recipe/kernel/kata-3.17.0/arm64/serial.conf": "2744f3adf1e4d25cc647e9d552fb0a6706025a8eedd317b0f646461db5d571d0",
+    "kernel/recipe/kernel/kata-3.17.0/arm64/virtio.conf": "3b0c5f4927a12ee811ea216401c13237e75f548bb68e7d5c1ba20d29ca63df3f",
+    "kernel/recipe/kernel/kata-3.17.0/common/9p.conf": "8dc7c70b983d22dc133b1a0e3a1bccbc4e934ef3dd0ec12fa9fc0885ef5fbcec",
+    "kernel/recipe/kernel/kata-3.17.0/common/acpi.conf": "f20678b1fc7bb9fa0a9d6260ea7302d35e0ac845308b72289f377937a393d3ac",
+    "kernel/recipe/kernel/kata-3.17.0/common/base.conf": "c475e92c7365f33ca7fe609b7668120c4cd6495d1a95d68478d63e7e250b9443",
+    "kernel/recipe/kernel/kata-3.17.0/common/cgroup.conf": "309955dd21ef9d5483457207fb632acbdeae95a7b5c277d20fb8697e1626607a",
+    "kernel/recipe/kernel/kata-3.17.0/common/cpu.conf": "349ba9cf0cb8731cfee114e0cb25a5a5b7ac16999ad4655be8f330d5649e6774",
+    "kernel/recipe/kernel/kata-3.17.0/common/crypto.conf": "de28b977b310543f01626d949c8d9540520333f09b40d4ea2c1b1f62b9067e1c",
+    "kernel/recipe/kernel/kata-3.17.0/common/dax.conf": "736aebd6035aa55068b12d995783d799c522e1042e4c3da25585394bdec5d67e",
+    "kernel/recipe/kernel/kata-3.17.0/common/debug.conf": "de7e5681d2b9b4622eae9d7cc174dc30d71cfdafd3e7f9af0e5c530cfa868dee",
+    "kernel/recipe/kernel/kata-3.17.0/common/elf.conf": "49a29f90aa21e5577952311b0d1a3d7a6b4f162c0245d3a356bbefb09671a91e",
+    "kernel/recipe/kernel/kata-3.17.0/common/fs.conf": "27973392a626f4a8724a9da1612dd452f6b009514ece9bb02963070154ceefea",
+    "kernel/recipe/kernel/kata-3.17.0/common/hotplug.conf": "48e6b29e10d725d99b77c499e416fb914048290cf9393163e244d3eb9c944969",
+    "kernel/recipe/kernel/kata-3.17.0/common/huge.conf": "874b094be39b69f275d161f7d04ecb59d863a1d71b5897ba93b07a8063b16eca",
+    "kernel/recipe/kernel/kata-3.17.0/common/lsm.conf": "b746ef998fb07b5348423a3ea3d41635f4ff31402ce558a492f375406f5fa22c",
+    "kernel/recipe/kernel/kata-3.17.0/common/mmio.conf": "99ec6e7e8274ad2faf51957c2201f9a68f4fd78d45c0ea51b0749edaf0118d21",
+    "kernel/recipe/kernel/kata-3.17.0/common/mmu.conf": "1af4495b5538eb9f43177e3e497672c98e0547a71b3b1085d1d588293f1595d7",
+    "kernel/recipe/kernel/kata-3.17.0/common/namespaces.conf": "fe40eb2d5a544205bd51a5c774456b7ba3f4c74c9274c266c42b6ef66ee08635",
+    "kernel/recipe/kernel/kata-3.17.0/common/netfilter.conf": "90dfe55f46598951aafffce6965db4a38d8b0879b1fdbf12cf914209849ddbde",
+    "kernel/recipe/kernel/kata-3.17.0/common/network.conf": "fb3a5375b20e690421016793dc00ba0cabf51a284f78f74dbcca48f5a058fbf1",
+    "kernel/recipe/kernel/kata-3.17.0/common/pmem.conf": "078605f9494f3989bcfc68ee09d1638064cdeaa3d025202897244cab73210d4b",
+    "kernel/recipe/kernel/kata-3.17.0/common/seccomp.conf": "566bf54404878d7846c90f889b22f9c41596b8bd76bd8fce6a5a7a1537a62582",
+    "kernel/recipe/kernel/kata-3.17.0/common/security.conf": "2a8fc8ce5877e7cd3d253dae1643767e7dc637eb9ab7e799a797c5f96ee1de50",
+    "kernel/recipe/kernel/kata-3.17.0/common/serial.conf": "e2698496dd26d33baff4e5737f69030668b3878b48e13284db1af7ff54696a44",
+    "kernel/recipe/kernel/kata-3.17.0/common/vfio.conf": "102e6d53e2d123082410e74542aada975045f45ad5554d261bd27c3f110afc60",
+    "kernel/recipe/kernel/kata-3.17.0/common/virtio-extras.conf": "cc2e4c805a3cdc97264db11e9d4572d0c45b7fbcb65a117d25749851ecad4b1a",
+    "kernel/recipe/kernel/kata-3.17.0/common/virtio.conf": "d178b1fa222dc6b86e0b00df7c64a9f55f544bd36a6b781d9dc0cd0292e308e9",
+    "kernel/recipe/kernel/kata-3.17.0/x86_64/acpi.conf": "3db33526d351d611eab0bbb33c150c74d801165126d43a20b2665d0d5e5eebfa",
+    "kernel/recipe/kernel/kata-3.17.0/x86_64/base.conf": "0f20b7954516ca002b0baf09f626dd564aa6ace67c6ed1b7583a4c793134ca6d",
+    "kernel/recipe/kernel/kata-3.17.0/x86_64/crypto.conf": "20bf42266522163a26d46165eaa98251e2cc2b2f9de07e8700e8bef1ba46e001",
+    "kernel/recipe/kernel/kata-3.17.0/x86_64/fs.conf": "be928124a49a7a603cd08142249d2f9a0fff7fb02b5ea86270fff7d5be92beb6",
+    "kernel/recipe/kernel/kata-3.17.0/x86_64/hotplug.conf": "b9f210ab91c393a3b0c48215c0892bfe990df1916f09f8fa9cee812918de76b0",
+    "kernel/recipe/kernel/kata-3.17.0/x86_64/mmu.conf": "a567ee81325f44b85d544ee277e3e43020a43a83647736638a8da71ea60e893d",
+    "kernel/recipe/kernel/kata-3.17.0/x86_64/network.conf": "4938654ad53b384d660e930a833b5cf693294b39b14f9430c60c3df07b9da362",
+    "kernel/recipe/kernel/kata-3.17.0/x86_64/pci.conf": "4ec261a12bb2e0279440dfa5ae9da466b5fd1e0c1afdbf8a4a51a9c299d6f743",
+    "kernel/recipe/kernel/kata-3.17.0/x86_64/ptp.conf": "197e39b027bbb9e0c852ef07937bd08439a71263e6a9318b09e96c88036c7938",
+    "kernel/recipe/kernel/kata-3.17.0/x86_64/sgx.conf": "76e550267d075d8915e34fac2c605140d1a408ddf30b2869bc39ba89f7a21c86",
+    "kernel/recipe/kernel/kata-3.17.0/x86_64/vfio.conf": "a5d025c936c1a45c81255bbb9953942ea7a1d0db585a794890ff5c3b69804e5a",
+    "kernel/recipe/kernel/kata-3.17.0/x86_64/virtio.conf": "3b0c5f4927a12ee811ea216401c13237e75f548bb68e7d5c1ba20d29ca63df3f",
+    "ubuntu/FROM-LAUNCHPAD.txt": "3aeaf44cbd7369608b87a5907ee0d38e83d5f2d5b3051af9c07b8b0663e681de",
+    "ubuntu/acl_2.3.2-1build1.1.debian.tar.xz": "0d324adb403a50aa2889a11e098d34ce5adecd1cb89f83799f66dbb1d8b71280",
+    "ubuntu/acl_2.3.2-1build1.1.dsc": "da831b979338d324df2adcedd5a06f9a5f303e83be2b43d58ee39288dde8fc88",
+    "ubuntu/acl_2.3.2.orig.tar.xz": "97203a72cae99ab89a067fe2210c1cbf052bc492b479eca7d226d9830883b0bd",
+    "ubuntu/acl_2.3.2.orig.tar.xz.asc": "184c6a903490885a096095db67b433a04542c6569f167cbe8115268c0f227273",
+    "ubuntu/adduser_3.137ubuntu1.dsc": "3f9e61ffef61902c9eaf1c8738bb987ff882dbba2d22385fccefaa3fcd53a77b",
+    "ubuntu/adduser_3.137ubuntu1.tar.xz": "f4b0669a5731e1a63fc6eb56a8a4b9e54b19d76ed6c819bf48c1028790e395f3",
+    "ubuntu/apparmor_4.0.1really4.0.1-0ubuntu0.24.04.8.debian.tar.xz": "ee743b137754d09da93b579abaac21da8526eef5a32834a8d3e011710bd14885",
+    "ubuntu/apparmor_4.0.1really4.0.1-0ubuntu0.24.04.8.dsc": "f73d91f3b5f648cee59474189982a96791728826818f58b61edd50967e8f206b",
+    "ubuntu/apparmor_4.0.1really4.0.1.orig.tar.gz": "b0d72cedc48e533d189ea415bde721ad597101c77fa398fdd2858ec4f58f7e26",
+    "ubuntu/apt_2.8.3.dsc": "1d41cd04115e1a79f0fa4d738e5c34603ae8a4f40122d8a18a622fd6d20a5523",
+    "ubuntu/apt_2.8.3.tar.xz": "088522b3613b28fdbcfa61f1f7e476bf6dc6b0120a8f74409e9527580c9f9d3b",
+    "ubuntu/argon2_0~20190702+dfsg-4build1.debian.tar.xz": "3387a878778e1107495c129d8054b641789ccaa7189b0383a3a5995aefe18f9b",
+    "ubuntu/argon2_0~20190702+dfsg-4build1.dsc": "2ce9d871da01cb55d60d479ec15264ea6fa6fd60b541be72287c079963602783",
+    "ubuntu/argon2_0~20190702+dfsg.orig.tar.xz": "815f1017b5b0033204778c2e32443257274bc5d9dd16d355c4f7db8189e23dcc",
+    "ubuntu/attr_2.5.2-1ubuntu0.1.debian.tar.xz": "11d4663edfac0d6738201ff942b65706cb1eb29ae0e8dad50790c9bf6509fc1f",
+    "ubuntu/attr_2.5.2-1ubuntu0.1.dsc": "3b0921ea6607447a2c61e5fa6136a72977712d1b1c7d24a205d107a17e7b3ad6",
+    "ubuntu/attr_2.5.2.orig.tar.xz": "f2e97b0ab7ce293681ab701915766190d607a1dba7fae8a718138150b700a70b",
+    "ubuntu/attr_2.5.2.orig.tar.xz.asc": "eeac729088d3c6379e91b7596cb3582e46b047c47f0fa3c5c77f9c9e84dc3a4c",
+    "ubuntu/audit_3.1.2-2.1build1.1.debian.tar.xz": "ed9d8bb3ff1194b6c8943c7768596383f995b1d45dbc57b8f5ca5868a7b22558",
+    "ubuntu/audit_3.1.2-2.1build1.1.dsc": "3df86dee4b6d645173901fad492776add35f82c4e7c58cd8a4f82931a2588324",
+    "ubuntu/audit_3.1.2.orig.tar.gz": "c0b1792d1f0a88c6f1828710509cbb987059fc68712c97669ca90eae103d287d",
+    "ubuntu/base-files_13ubuntu10.5.dsc": "326996812284298ceb029ae175af1bc55480c977f652469775983b53ae005d9a",
+    "ubuntu/base-files_13ubuntu10.5.tar.xz": "536ba84ca53e25f5c0aa46c144fddcdad1e477c7a470e70baccd17d7ecfdfc41",
+    "ubuntu/base-passwd_3.6.3build1.dsc": "6c7289264d48fd871e1c516c8dd0814160558e339202cffa8768621785302185",
+    "ubuntu/base-passwd_3.6.3build1.tar.xz": "ea51df18f6f7d969ff93d25ce42780ded35ccb4292353780ba6ad9861857d787",
+    "ubuntu/bash_5.2.21-2ubuntu4.debian.tar.xz": "bdb10c18d167dda3b265cb3db75314d524edbf7794fed36f0fb0dcc32f5e6ac9",
+    "ubuntu/bash_5.2.21-2ubuntu4.dsc": "d5a89c09f42c828d5e31dc3a1680882aa0ddaad5072963e563dec7dfc4919d33",
+    "ubuntu/bash_5.2.21.orig.tar.xz": "ec21ab4efd6bd7a6e2802fbda622b81bfc43a8095d721234d4bf075797683014",
+    "ubuntu/bind9_9.18.39-0ubuntu0.24.04.7.debian.tar.xz": "42134cff7598a44a6eb2d912fcc13e96c53551f4cb314637b34649e78716423e",
+    "ubuntu/bind9_9.18.39-0ubuntu0.24.04.7.dsc": "e89cbbadcfd05f81c718c118e48d22403457a731c6e16a1d29843e290d754ba5",
+    "ubuntu/bind9_9.18.39.orig.tar.xz": "725755232186f3be4a07d7e40978a3389434bef7c0cdc262cc641a364072976d",
+    "ubuntu/bind9_9.18.39.orig.tar.xz.asc": "12deda1eaebc908d7d232ad17f7f36209b2984958ef46eeef70e96da2ebfca01",
+    "ubuntu/bridge-utils_1.7.1-1ubuntu2.debian.tar.xz": "5d838fed8ee1a9112e7b01763370d62cd484124a84be0e211d63707d5920e4b1",
+    "ubuntu/bridge-utils_1.7.1-1ubuntu2.dsc": "9afb41fcf5ac6f944153dc1ec693feca6038a1e7d1ccd12f59b7123e7cbdf719",
+    "ubuntu/bridge-utils_1.7.1.orig.tar.xz": "a61d8be4f1a1405c60c8ef38d544f0c18c05b33b9b07e5b4b31033536165e60e",
+    "ubuntu/brotli_1.1.0-2build2.debian.tar.xz": "96603222d7b6edb3253a846852972b6bde5b86814907d5540249e6950980a943",
+    "ubuntu/brotli_1.1.0-2build2.dsc": "c58421959677a80d942924685007e8d5b5d1160fd7f61a1f0a9062bf08835856",
+    "ubuntu/brotli_1.1.0.orig.tar.gz": "10973f4b4199eafa1d5735ef661ddb2ec2f97319ee9fd1824d4aabe08cff5265",
+    "ubuntu/busybox_1.36.1-6ubuntu3.1.debian.tar.xz": "1c7d785cf1e1d5d09ddc22fe755e14327fb3799878a5d840fc611044ff05f022",
+    "ubuntu/busybox_1.36.1-6ubuntu3.1.dsc": "ffbee3f0383ea5a3e77033c2bcc1978dc9ae00ff8c9d0a362ee32f6e84254be8",
+    "ubuntu/busybox_1.36.1.orig.tar.bz2": "b8cc24c9574d809e7279c3be349795c5d5ceb6fdf19ca709f80cde50e47de314",
+    "ubuntu/busybox_1.36.1.orig.tar.bz2.asc": "d4a7082ba3cbc35b2fdb4f132a32e3789de66ce468b7b4858563f5f157c28afe",
+    "ubuntu/bzip2_1.0.8-5.1ubuntu0.1.debian.tar.bz2": "77c61e0490ff7cf49aa8ffe62e117e85b3af08e14341c4b851f8d7ec757fe099",
+    "ubuntu/bzip2_1.0.8-5.1ubuntu0.1.dsc": "87d782671790af480ab3c3b258885ad2c239e41772e0116ceda6446c493f9dd4",
+    "ubuntu/bzip2_1.0.8.orig.tar.gz": "ab5a03176ee106d3f0fa90e381da478ddae405918153cca248e682cd0c4a2269",
+    "ubuntu/ca-certificates_20260601~24.04.1.dsc": "42292e01982f1a0aaed5ab540bc771322864bf92798ca3099a1e582ced440116",
+    "ubuntu/ca-certificates_20260601~24.04.1.tar.xz": "fd3a351ad98f5b714915d4a7c82ae258a174b48f7d5391713c7f3445067143eb",
+    "ubuntu/cdebconf_0.271ubuntu3.dsc": "87a9567bdbdc9401d5cde6e5dbc8fb48619d7a2ef38795156c24a7fef3200ef5",
+    "ubuntu/cdebconf_0.271ubuntu3.tar.xz": "a4b242e7aef7923fd16d3aeb5a220ab6f4d27bc005b9d1e7d67449faaa68bcd1",
+    "ubuntu/coreutils_9.4-3ubuntu6.3.debian.tar.xz": "23eb9e94564e2451ea02a879daa0ee9ba8db3777e84e020fcd08d49aaebc57d4",
+    "ubuntu/coreutils_9.4-3ubuntu6.3.dsc": "419fea2f0fec8299d95cafb11425391fe45d60b30d052c7f1e3a162ea56a6653",
+    "ubuntu/coreutils_9.4.orig.tar.xz": "ea613a4cf44612326e917201bbbcdfbd301de21ffc3b59b6e5c07e040b275e52",
+    "ubuntu/cryptsetup_2.7.0-1ubuntu4.2.debian.tar.xz": "f219b25303b8f934780c6f348c71387ddc1597906d3b7fe5960f1678a5b8098a",
+    "ubuntu/cryptsetup_2.7.0-1ubuntu4.2.dsc": "dd0d8fafae0aba2d9e331d24af5e919bdac9baf501a3ad52f909392ca2b5a1f6",
+    "ubuntu/cryptsetup_2.7.0.orig.tar.gz": "f0d490f2eb32d1648d586d56fab1329666d34e69e0db3bd6f0ac16fb3de816a2",
+    "ubuntu/curl_8.5.0-2ubuntu10.15.debian.tar.xz": "c823e1dbb3edea4b9a8d0042ac6be01469d1bbc06a4c04228f533b985bfabd72",
+    "ubuntu/curl_8.5.0-2ubuntu10.15.dsc": "b31986d2e7980472203df2a39c5ed98db783216b09393aaac0c85d092be33632",
+    "ubuntu/curl_8.5.0.orig.tar.gz": "05fc17ff25b793a437a0906e0484b82172a9f4de02be5ed447e0cab8c3475add",
+    "ubuntu/cyrus-sasl2_2.1.28+dfsg1-5ubuntu3.1.debian.tar.xz": "a1017cf9d4fd098325338d1d7f1f71cb87102934e7b35c8f5e726d246360689e",
+    "ubuntu/cyrus-sasl2_2.1.28+dfsg1-5ubuntu3.1.dsc": "6ede2d7122c4ea1e807f45b647edbdf9fb1521ad09b0ca0b9b48f220ef33f23f",
+    "ubuntu/cyrus-sasl2_2.1.28+dfsg1.orig.tar.xz": "e796a5d85d1a85e1b433d43504e467f9075c7ebc0b45730a3996cf11b1deada4",
+    "ubuntu/dash_0.5.12-6ubuntu5.debian.tar.xz": "84671be9725b738725575d44069f9e7a41344ae6a8027d8ba2d6a172b5e406d6",
+    "ubuntu/dash_0.5.12-6ubuntu5.dsc": "be4a5ba81756b24d0d22f30cd9e609f5b84f8a8d685cb9825e9eae6201c52cf9",
+    "ubuntu/dash_0.5.12.orig.tar.gz": "6a474ac46e8b0b32916c4c60df694c82058d3297d8b385b74508030ca4a8f28a",
+    "ubuntu/db5.3_5.3.28+dfsg2-7.debian.tar.xz": "9cee8969e1f440ec8aa2fbacd3a5819907829e0e7e7f1f746dccaa2c93fbf3f2",
+    "ubuntu/db5.3_5.3.28+dfsg2-7.dsc": "f7313fb306b5bf7ad6a428bffb581e649318859df139e35dd47c3d1f733803b2",
+    "ubuntu/db5.3_5.3.28+dfsg2.orig.tar.xz": "ad41b507415dec8316e828b2230242af2251d2c86eefa3c7aa9ef47c5239ef33",
+    "ubuntu/dbus_1.14.10-4ubuntu4.1.debian.tar.xz": "c28e0e4840bf3c3f3cbdacae9b7228bb4694dd234f325535942dde76af3c322e",
+    "ubuntu/dbus_1.14.10-4ubuntu4.1.dsc": "3d9037176550657a3584f7640027a6d970c85b0cd158a2be7e8051aab1349edb",
+    "ubuntu/dbus_1.14.10.orig.tar.xz": "ba1f21d2bd9d339da2d4aa8780c09df32fea87998b73da24f49ab9df1e36a50f",
+    "ubuntu/dbus_1.14.10.orig.tar.xz.asc": "5f292cd0603c3d736026ed3f4d1c1937847981669c1f0a389083518f013e1081",
+    "ubuntu/debconf_1.5.86ubuntu1.dsc": "fc3475b7134c7780b34d21dde63bea3be2a225215a3e9f9c90e27df40189f1bc",
+    "ubuntu/debconf_1.5.86ubuntu1.tar.xz": "1a50d1697b9c36b3600d1746b6a47864ed4adfd26c3d180f2d2b1286ad51c6f4",
+    "ubuntu/debianutils_5.17build1.dsc": "f6479aa03505646f946cc42d7d093bc0d47dd2d374b7dcc84d84330f7e86095d",
+    "ubuntu/debianutils_5.17build1.tar.xz": "f1f157a50769fcf8117909938dd8cbb75d39da26cff5a5aa15aa34b4d6c9acc2",
+    "ubuntu/diffutils_3.10-1ubuntu0.1.debian.tar.xz": "5010764e1ebbb3e2a99b90e0c14b86d44d15508f8ba7fa2ec7a51ffcba706d49",
+    "ubuntu/diffutils_3.10-1ubuntu0.1.dsc": "cd25a52b3cc70a46c98462e3893491d9a461cebbf8600461c879c0c900ae88b4",
+    "ubuntu/diffutils_3.10.orig.tar.xz": "90e5e93cc724e4ebe12ede80df1634063c7a855692685919bfe60b556c9bd09e",
+    "ubuntu/diffutils_3.10.orig.tar.xz.asc": "a94faf8f1baa04ff220f7b2ccb137c16337284e023ebc4a1d5df475c08d810f7",
+    "ubuntu/dpkg_1.22.6ubuntu6.6.dsc": "5828d5dd77635c8bd0197116446bc64ec76913500affbcb42aaae1644acb749d",
+    "ubuntu/dpkg_1.22.6ubuntu6.6.tar.xz": "7048ee31e30066ae123cdcb891cfa1ad55b2f42a4e04fca2c5db41607ae25196",
+    "ubuntu/e2fsprogs_1.47.0-2.4~exp1ubuntu4.1.debian.tar.xz": "26b381ec175ff52d1cc2fd1b217f84b9e1d7d33a58dcbaf8942115dd27a03f84",
+    "ubuntu/e2fsprogs_1.47.0-2.4~exp1ubuntu4.1.dsc": "215fe7b95c246894654c59a01514dfdc16ec17a0dcb09dc7a7c1ec1246ed4964",
+    "ubuntu/e2fsprogs_1.47.0.orig.tar.gz": "6667afde56eef0c6af26684974400e4d2288ea49e9441bf5e6229195d51a3578",
+    "ubuntu/e2fsprogs_1.47.0.orig.tar.gz.asc": "704928204a52ddaa0ac8ef549c1bfba3c38e66c361d3853c8a4c38e6082b90f1",
+    "ubuntu/elfutils_0.190-1.1ubuntu0.1.debian.tar.xz": "4c3130951f7b865d50ff57379a258926a66bcd2753e3c12301bbb110fbb417fa",
+    "ubuntu/elfutils_0.190-1.1ubuntu0.1.dsc": "7852785ce5ce51a6dad0f6b67188d94ffedaffa6d0128fecabeb6a1ccc2aabea",
+    "ubuntu/elfutils_0.190.orig.tar.bz2": "8e00a3a9b5f04bc1dc273ae86281d2d26ed412020b391ffcc23198f10231d692",
+    "ubuntu/expat_2.6.1-2ubuntu0.6.debian.tar.xz": "95ae84284d153f5108255b21bc0e76f8cdabaf0bb74cdc61ef410f4b77146517",
+    "ubuntu/expat_2.6.1-2ubuntu0.6.dsc": "d1a0cb48d939de61f2121669c941664b844d9a1adf9d8db28e000489df665070",
+    "ubuntu/expat_2.6.1.orig.tar.gz": "14113ed69357172a0bf5a268793c8b5b01afc77c7a2e5fb8dd0b06cb87c02c4a",
+    "ubuntu/findutils_4.9.0-5build1.debian.tar.xz": "c266ae3fdf861d29b71436237f7a564058d68810029daa95e581b219c5c69d5c",
+    "ubuntu/findutils_4.9.0-5build1.dsc": "c586baab1e53ace30420e86364df848fb8c6f754c1935ff556060b030052f603",
+    "ubuntu/findutils_4.9.0.orig.tar.xz": "a2bfb8c09d436770edc59f50fa483e785b161a3b7b9d547573cb08065fd462fe",
+    "ubuntu/findutils_4.9.0.orig.tar.xz.asc": "924c3719d066eda1b3e47175f8b83e90e9a23f0a639ebe7445621917b283c385",
+    "ubuntu/gawk_5.2.1-2ubuntu0.1.debian.tar.xz": "7e85b4132f2a3d02ab29feccd751ec96e277c0e03bf64e1df4f706cdd0a52122",
+    "ubuntu/gawk_5.2.1-2ubuntu0.1.dsc": "cc93c603e91fca4f9ca795efa1a0aad2147392202227fac11e5e139a857dd9fb",
+    "ubuntu/gawk_5.2.1.orig.tar.xz": "2337a0283b180ec1b9c727973a34781c6478b3ae9bcbdcca0a4dc49861d75a65",
+    "ubuntu/gcc-14_14.2.0-4ubuntu2~24.04.1.debian.tar.xz": "cfece214c2fb790ef5f3baffb9a53e40618e7ae12d053610b251e94d77d08ade",
+    "ubuntu/gcc-14_14.2.0-4ubuntu2~24.04.1.dsc": "50950080874a6ec6780dd60c243e21d9cda9d736bb32bca98d16095d27cc01b5",
+    "ubuntu/gcc-14_14.2.0.orig.tar.gz": "768c314c11eeab56ccebb91eb42ec4a41122fa94f0d83400126401942622197b",
+    "ubuntu/glibc_2.39-0ubuntu8.9.debian.tar.xz": "d6114f2302896a3c8612453e1bf1d0e61603e3029ba4a7c246fbb1ab4c48d2b0",
+    "ubuntu/glibc_2.39-0ubuntu8.9.dsc": "1b73a89e0910eb3e5920cde639ac7eb606256d8ee809688ff9b5912b67002711",
+    "ubuntu/glibc_2.39.orig.tar.xz": "f77bd47cf8170c57365ae7bf86696c118adb3b120d3259c64c502d3dc1e2d926",
+    "ubuntu/glibc_2.39.orig.tar.xz.asc": "2cce427ef7933c17379f5514e4f0ccf8dffae5bf8c72f0f7e0bf8b8401f34be5",
+    "ubuntu/gmp_6.3.0+dfsg-2ubuntu6.1.debian.tar.xz": "0a7592ee94876fcc0dba60c9a9fba806a72752c104c04d553803e1b7a97026a3",
+    "ubuntu/gmp_6.3.0+dfsg-2ubuntu6.1.dsc": "7fdd2464ee453296e33598dad6f84dd489640c08f50552389469bcf90537582e",
+    "ubuntu/gmp_6.3.0+dfsg.orig.tar.xz": "bd2966e6d277f79328e894a5a9f3ba3fbf2ed2be81def5f48623e30c23fb1572",
+    "ubuntu/gnupg2_2.4.4-2ubuntu17.6.debian.tar.xz": "c66b2623b54792f70c6598367ad1f3c4dcf7c65e68c2a4e4e98f0ba6eaa8ba80",
+    "ubuntu/gnupg2_2.4.4-2ubuntu17.6.dsc": "67504c8f474dce8880c25a5a14993d419b3f39db2a77039f24e65903ce93f4b9",
+    "ubuntu/gnupg2_2.4.4.orig.tar.bz2": "67ebe016ca90fa7688ce67a387ebd82c6261e95897db7b23df24ff335be85bc6",
+    "ubuntu/gnupg2_2.4.4.orig.tar.bz2.asc": "47986167998b2cb6be4e4cdeef0c468139e06580ed65ce2cf241c527d74e54db",
+    "ubuntu/gnutls28_3.8.3-1.1ubuntu3.6.debian.tar.xz": "b4cc6ebad4cb21ffe82d094f6d9c90de31e08a8b31ed36911a2adbe5aaa56d47",
+    "ubuntu/gnutls28_3.8.3-1.1ubuntu3.6.dsc": "34455be2f5fb343b5833ff40cc00623106326e6cc88aaf9862943f6b3aa5ab60",
+    "ubuntu/gnutls28_3.8.3.orig.tar.xz": "f74fc5954b27d4ec6dfbb11dea987888b5b124289a3703afcada0ee520f4173e",
+    "ubuntu/gnutls28_3.8.3.orig.tar.xz.asc": "b2b90d225728890b0e2aa7c05e5f25f8ba1282821b46e72cd99f0c732b639cef",
+    "ubuntu/grep_3.11-4build1.debian.tar.xz": "f87cd3d0db16527f5c3a8eb6c737a72b0404eaafdbba19d707f8d89315d32e4a",
+    "ubuntu/grep_3.11-4build1.dsc": "2d0a5ced73347bbf22f35421c31360fc2fe4a0e6267dc31578e2630abe97afa4",
+    "ubuntu/grep_3.11.orig.tar.xz": "1db2aedde89d0dea42b16d9528f894c8d15dae4e190b59aecc78f5a951276eab",
+    "ubuntu/grep_3.11.orig.tar.xz.asc": "89ec23ffd59b68822732dc8204fc89883c3af30a90ae390feb94346d9d09a589",
+    "ubuntu/gzip_1.12-1ubuntu3.2.debian.tar.xz": "13008977038dcf4058301a96006e994a5c3c48877d2bc39ee4c29d234ba21832",
+    "ubuntu/gzip_1.12-1ubuntu3.2.dsc": "5919ccc72dbb8a02b7c461345f3c04bd3b33445ff2a23035b8d5837db3f09d44",
+    "ubuntu/gzip_1.12.orig.tar.xz": "ce5e03e519f637e1f814011ace35c4f87b33c0bbabeec35baf5fbd3479e91956",
+    "ubuntu/hostname_3.23+nmu2ubuntu2.dsc": "547a860636d92c3696b47ca33807293b74a0c80a92e6f1210b75aa1f27650e79",
+    "ubuntu/hostname_3.23+nmu2ubuntu2.tar.xz": "38e2dcc815ccebd90a7623197a530da2538d8f14f64546147c95cffba5138e7f",
+    "ubuntu/icu_74.2-1ubuntu3.1.debian.tar.xz": "45c74f50709547b0bfe3de020fd77be92c44d55e7020e718b0a47a0d0382f074",
+    "ubuntu/icu_74.2-1ubuntu3.1.dsc": "6cbf2e7018b5d16d634994e32af96f4d60f4468c36674c57f897b68812bbd883",
+    "ubuntu/icu_74.2.orig.tar.gz": "5e4fb11d6a3e6b85afb55de8da8a71538f1d8fd64fce893986b37d60e5bb0091",
+    "ubuntu/icu_74.2.orig.tar.gz.asc": "1ca528b0017bae639fec7e89e3f988d0fa7def3e2436e5f7f5f9ec7dec2d9ece",
+    "ubuntu/init-system-helpers_1.66ubuntu1.dsc": "99bad9c4c7b98a89f4cb6b2a7151f4ed0dee46d5671712782ae98cc879d1feb2",
+    "ubuntu/init-system-helpers_1.66ubuntu1.tar.xz": "ca60a744414997068de76bfeff98a6834ebd92c1c691bfc28d49df93e67b6a78",
+    "ubuntu/iproute2_6.1.0-1ubuntu6.4.debian.tar.xz": "d127ad985c91e0cc4192876721e533efc893deed08e256b3662205d8401552cd",
+    "ubuntu/iproute2_6.1.0-1ubuntu6.4.dsc": "e1a68d3819d17295c958922bc5a4bd8a0df951d183e4414f9661a75a1e6e8ced",
+    "ubuntu/iproute2_6.1.0.orig.tar.xz": "5ce12a0fec6b212725ef218735941b2dab76244db7e72646a76021b0537b43ab",
+    "ubuntu/iptables_1.8.10-3ubuntu2.debian.tar.xz": "9b2adc03e912f0d085cadbfe4d413ba8accad184b73a9c3b9d0aa0327ba6f069",
+    "ubuntu/iptables_1.8.10-3ubuntu2.dsc": "7c07534b26de1db5efb044744f0404b466b2df39c8a45b2451720ad705de84eb",
+    "ubuntu/iptables_1.8.10.orig.tar.xz": "5cc255c189356e317d070755ce9371eb63a1b783c34498fb8c30264f3cc59c9c",
+    "ubuntu/jansson_2.14-2build2.debian.tar.xz": "93fb8b5f8c4a8b098622d6865f36f0711a9ee42e104f34457c8503f218078e68",
+    "ubuntu/jansson_2.14-2build2.dsc": "79f56ca657a0d680549bf9b0c4fdcf2fe824221bee7462c0ecad56baaeca0a21",
+    "ubuntu/jansson_2.14.orig.tar.gz": "c739578bf6b764aa0752db9a2fdadcfe921c78f1228c7ec0bb47fa804c55d17b",
+    "ubuntu/jq_1.7.1-3ubuntu0.24.04.2.debian.tar.xz": "c6826cb9ceb779f4ace4fcec1b94f2b5a89f991e4df5670daef2cb01bcc23588",
+    "ubuntu/jq_1.7.1-3ubuntu0.24.04.2.dsc": "8ae158eebf25ea22948e6d983e809269ea51005b0c71773a6fe1811a7d98c0e2",
+    "ubuntu/jq_1.7.1.orig.tar.gz": "fc75b1824aba7a954ef0886371d951c3bf4b6e0a921d1aefc553f309702d6ed1",
+    "ubuntu/json-c_0.17-1build1.debian.tar.xz": "31e72da83a72fc0d51559ecbd9d1cf3516574635d638886f273f5b6b26574467",
+    "ubuntu/json-c_0.17-1build1.dsc": "e574ebf2f5187b696c51ee6ab11f7d0f639c839720ab9a5775acbf884cafddd3",
+    "ubuntu/json-c_0.17.orig.tar.gz": "024d302a3aadcbf9f78735320a6d5aedf8b77876c8ac8bbb95081ca55054c7eb",
+    "ubuntu/keyutils_1.6.3-3build1.debian.tar.xz": "71904f9f862c496333fd04c7af70c15b42198b90b41f460c501c80e86c3f1d3d",
+    "ubuntu/keyutils_1.6.3-3build1.dsc": "d81679165d93bfcadd5bf3fdca123ce0e4562e2ad9712aa2b9d8c2d1c701324d",
+    "ubuntu/keyutils_1.6.3.orig.tar.gz": "a61d5706136ae4c05bd48f86186bcfdbd88dd8bd5107e3e195c924cfc1b39bb4",
+    "ubuntu/kmod_31+20240202-2ubuntu7.2.debian.tar.xz": "4025026e9e1feb507c2e98a4ce8c149f835dc4764119a86523aae3b78cd829ac",
+    "ubuntu/kmod_31+20240202-2ubuntu7.2.dsc": "11126d5723acb9be1ac0f69280d33b249c0a2021d0ab2c87903124da36d0449d",
+    "ubuntu/kmod_31+20240202.orig.tar.xz": "0b8521d929cc62b7594886c8ed24109a22b96e732fdcc6f0afa486bd62c487bc",
+    "ubuntu/krb5_1.20.1-6ubuntu2.10.debian.tar.xz": "e3a9136f4c3d93f41b5ffb3533ff472fedf52efecebaba79127fbc1fbdced6ca",
+    "ubuntu/krb5_1.20.1-6ubuntu2.10.dsc": "58839693f92867ecb31e253dc61198a94166f17da3afb1f9b740dc112f511a4b",
+    "ubuntu/krb5_1.20.1.orig.tar.gz": "704aed49b19eb5a7178b34b2873620ec299db08752d6a8574f95d41879ab8851",
+    "ubuntu/libassuan_2.5.6-1build1.debian.tar.xz": "f6e12195adc071a935556ccea239a64cd305ce667dde4ce9a11691e41278a1c4",
+    "ubuntu/libassuan_2.5.6-1build1.dsc": "f1f7508772b8f7c4620b115cf5d6adce5133d3f43d2d61cf5d9ea7152fa7cf9e",
+    "ubuntu/libassuan_2.5.6.orig.tar.bz2": "e9fd27218d5394904e4e39788f9b1742711c3e6b41689a31aa3380bd5aa4f426",
+    "ubuntu/libassuan_2.5.6.orig.tar.bz2.asc": "a1be6f5611de2f563a904c539e0415dd5823d9e1c4c0c1071418e7412174eaea",
+    "ubuntu/libbpf_1.3.0-2build2.debian.tar.xz": "cf307f4a37e17847b5cf91b0ed5426c2213a4c0e30a9010a10d4854f23ebe156",
+    "ubuntu/libbpf_1.3.0-2build2.dsc": "87023eb0efe8f19c9066433593b4218f623931d2b5bfb92d31796eace8bd2dbe",
+    "ubuntu/libbpf_1.3.0.orig.tar.gz": "11db86acd627e468bc48b7258c1130aba41a12c4d364f78e184fd2f5a913d861",
+    "ubuntu/libbsd_0.12.1-1build1.1.debian.tar.xz": "4086dc52ae53f0d7625a593c331460377868edc2a5606f4d8a341565aa94b2be",
+    "ubuntu/libbsd_0.12.1-1build1.1.dsc": "a44c2a70dbb9703c342ae49525507d22795b37308302c6167d72c3cbd3e76236",
+    "ubuntu/libbsd_0.12.1.orig.tar.xz": "d7747f8ec1baa6ff5c096a9dd587c061233dec90da0f1aedd66d830f6db6996a",
+    "ubuntu/libbsd_0.12.1.orig.tar.xz.asc": "04a4b66da93ea3c761e15fcedd705a969b67597d0619c3ebc5fe3cf72d477f1f",
+    "ubuntu/libcap-ng_0.8.4-2build2.debian.tar.xz": "dcbce4356e06358e39e94ea66c9fdf9ef4e635e560467918345c732df5237691",
+    "ubuntu/libcap-ng_0.8.4-2build2.dsc": "fb7456a3439418628d6c62c5545da55a7ee1a65e539b44b48c39ee9c2d3d9ce4",
+    "ubuntu/libcap-ng_0.8.4.orig.tar.gz": "5615c76a61039e283a6bd107c4faf345ae5ad4dcd45907defe5e474d8fdb6fd2",
+    "ubuntu/libcap2_2.66-5ubuntu2.4.debian.tar.xz": "7eb46752c6b59984494d2f641a049b9d4b394b7d1fe067729ccbc413c5943136",
+    "ubuntu/libcap2_2.66-5ubuntu2.4.dsc": "8178019803f285b92e52e82cf84b0a6fc18840041270b2c588db826b8277e3e0",
+    "ubuntu/libcap2_2.66.orig.tar.xz": "15c40ededb3003d70a283fe587a36b7d19c8b3b554e33f86129c059a4bb466b2",
+    "ubuntu/libedit_3.1-20230828-1build1.debian.tar.xz": "0df7e31ff4324654caa22386b7a7d404f769838e035555507eacd6e86bcf570d",
+    "ubuntu/libedit_3.1-20230828-1build1.dsc": "8f0644bf36c5c07122dccfdf6025941b7d6625582562292544068f323505b4bd",
+    "ubuntu/libedit_3.1-20230828.orig.tar.gz": "4ee8182b6e569290e7d1f44f0f78dac8716b35f656b76528f699c69c98814dad",
+    "ubuntu/libffi_3.4.6-1build1.debian.tar.xz": "9d8712818b833baf002a2413552194b8770800cb20b802ba1d3714156eba14fe",
+    "ubuntu/libffi_3.4.6-1build1.dsc": "a7a2c320c04149192a6dd78df8be28b2b27fd38e48d76f2ee6ba0c19ae0758f6",
+    "ubuntu/libffi_3.4.6.orig.tar.gz": "9ac790464c1eb2f5ab5809e978a1683e9393131aede72d1b0a0703771d3c6cda",
+    "ubuntu/libgcrypt20_1.10.3-2ubuntu0.2.debian.tar.xz": "8298a57538f427d3c1112f2d86e374dd8223156e06b403f5c7945dd3d86f2050",
+    "ubuntu/libgcrypt20_1.10.3-2ubuntu0.2.dsc": "688df10bc9c90b241926470d1f12a4d5092157263a6c1555996c53bcf40ca7d1",
+    "ubuntu/libgcrypt20_1.10.3.orig.tar.bz2": "8b0870897ac5ac67ded568dcfadf45969cfa8a6beb0fd60af2a9eadc2a3272aa",
+    "ubuntu/libgcrypt20_1.10.3.orig.tar.bz2.asc": "f02a5f961b89c034a78decbb355ea5a8d9356df5a9636dec53ae548d7d814b14",
+    "ubuntu/libgpg-error_1.47-3build2.1.debian.tar.xz": "f02a079a6ddf9930659c3402820b6bd190687e8f1c223f340c965a9da74abcd5",
+    "ubuntu/libgpg-error_1.47-3build2.1.dsc": "3c8abf463c9ade945fe2e9d87c4aa2bff0026964207b07e99432d9ef6d9436d8",
+    "ubuntu/libgpg-error_1.47.orig.tar.bz2": "9e3c670966b96ecc746c28c2c419541e3bcb787d1a73930f5e5f5e1bcbbb9bdb",
+    "ubuntu/libgpg-error_1.47.orig.tar.bz2.asc": "6ab547bf020761e1df80b08335773a91c345ff2c1344f15b1f7d195293ab21a5",
+    "ubuntu/libidn2_2.3.7-2build1.1.debian.tar.xz": "50d3154a3a5b3506aa340c1784f96bfe0f4c5608e2a1a9dd265aa204da4ef327",
+    "ubuntu/libidn2_2.3.7-2build1.1.dsc": "fa2970145d391578511ef78bc74a9ba7a57cff510d9e5fba39520f63b023986c",
+    "ubuntu/libidn2_2.3.7.orig.tar.gz": "4c21a791b610b9519b9d0e12b8097bf2f359b12f8dd92647611a929e6bfd7d64",
+    "ubuntu/libidn2_2.3.7.orig.tar.gz.asc": "d4e78fc1c5a5c35980be3a04dd864574f450d55921360b0aa19326c75ada4a98",
+    "ubuntu/libksba_1.6.6-1build1.debian.tar.xz": "efd216e823d18d40135ac8040c9f2c850e9588e334e62737717648ca8463a806",
+    "ubuntu/libksba_1.6.6-1build1.dsc": "a9fc5c2c4d878d6d8bbbbc57254ab5ffa131a580017efbc61ac68a87857f0410",
+    "ubuntu/libksba_1.6.6.orig.tar.bz2": "5dec033d211559338838c0c4957c73dfdc3ee86f73977d6279640c9cd08ce6a4",
+    "ubuntu/libksba_1.6.6.orig.tar.bz2.asc": "09d3c401810fa97d7f8f09ce53a1d788894c220ff7ff52af48e4255477f029ea",
+    "ubuntu/libmaxminddb_1.9.1-1build1.debian.tar.xz": "349d5f2db4c48f5b0274298c050f60ab1d2ab52880f14f3808662d6066fc4b25",
+    "ubuntu/libmaxminddb_1.9.1-1build1.dsc": "6ddde02b91566a5a2a79d26176ee62221d067e43e84dee736ee75f445aeaac7c",
+    "ubuntu/libmaxminddb_1.9.1.orig.tar.gz": "cc9c69e84c7f0ba557e165f013815cd3bfd25d62824d06c08c44c158acbd82d4",
+    "ubuntu/libmd_1.1.0-2build1.1.debian.tar.xz": "ed337af7e336b7dbb6b246c339baa34c9e832bf614a44d06158238259df12307",
+    "ubuntu/libmd_1.1.0-2build1.1.dsc": "11dfd22bba97a4c4ca6c09f34743ac6c72a34eb81344e3a1681c45e2d60ce239",
+    "ubuntu/libmd_1.1.0.orig.tar.xz": "1bd6aa42275313af3141c7cf2e5b964e8b1fd488025caf2f971f43b00776b332",
+    "ubuntu/libmd_1.1.0.orig.tar.xz.asc": "402fd3024e43ab975733d09e661804a58ca58697194e4b15216b1217cfe1dadb",
+    "ubuntu/libmnl_1.0.5-2build1.debian.tar.xz": "ae1c404e109ed28b12c520780c16404732f19128f801108c26232982b751777f",
+    "ubuntu/libmnl_1.0.5-2build1.dsc": "87ea0b2b02fc4b9d408bd942fefb6dd15bb162b9d9acade2a78928441d4bcdb2",
+    "ubuntu/libmnl_1.0.5.orig.tar.bz2": "274b9b919ef3152bfb3da3a13c950dd60d6e2bcd54230ffeca298d03b40d0525",
+    "ubuntu/libmnl_1.0.5.orig.tar.bz2.asc": "7175ee1de6c831e6d7ffae3540af7fcd9c64f302351af55ff12966ecbe6a5b71",
+    "ubuntu/libnetfilter-conntrack_1.0.9-6build1.debian.tar.xz": "fba00c7eb604af35788ca4ba830a440a02340ef88abea4a8bcd9beca2e135af1",
+    "ubuntu/libnetfilter-conntrack_1.0.9-6build1.dsc": "a9498379fd45e5e8083793cf9446cfb0a41f1f4a47133ee6b853730e5f371b55",
+    "ubuntu/libnetfilter-conntrack_1.0.9.orig.tar.bz2": "01b94beb40bc3afa3a55ae87dd2b5971c90c811dfa7c4b6e1eaf9fe0725d16ec",
+    "ubuntu/libnfnetlink_1.0.2-2build1.debian.tar.xz": "b85ff2b1a7eefb7d50b912a390a09a8f8601e2c04ef2219f76a1e0be152d3d18",
+    "ubuntu/libnfnetlink_1.0.2-2build1.dsc": "f853a14124303be1c4fed3c472d94696aab380ab7640aa75993cba7810afaf64",
+    "ubuntu/libnfnetlink_1.0.2.orig.tar.bz2": "b064c7c3d426efb4786e60a8e6859b82ee2f2c5e49ffeea640cfe4fe33cbc376",
+    "ubuntu/libnfnetlink_1.0.2.orig.tar.bz2.asc": "2ed73b9069ab761168bb11694b8507dbb65e194697d5674dabc8af08a76ac552",
+    "ubuntu/libnftnl_1.2.6-2build1.debian.tar.xz": "7af7d85f6fb71117d22a1187643d2bc193125ff161bc7feb1fdea5da66be69a5",
+    "ubuntu/libnftnl_1.2.6-2build1.dsc": "824459cc42ec67dc8baece9ac017afd0c9db8de219c1da0c946b6fe4c5de887f",
+    "ubuntu/libnftnl_1.2.6.orig.tar.xz": "ceeaea2cd92147da19f13a35a7f1a4bc2767ff897e838e4b479cf54b59c777f4",
+    "ubuntu/libnftnl_1.2.6.orig.tar.xz.asc": "3b7f8f72e36d8ad348e78b135cfd40d84fabfd9923a6d33e57153efcb839eed6",
+    "ubuntu/libonig_6.9.9-1build1.debian.tar.xz": "89be31dc43d126209d61008d26cd1216ce367f18f5f5e6a5c7d7278791725452",
+    "ubuntu/libonig_6.9.9-1build1.dsc": "9939f3546cd29e8c16a99eb5e9a0b6bcf0d3cf3fc83d140f8bef4f4555e10781",
+    "ubuntu/libonig_6.9.9.orig.tar.gz": "001aa1202e78448f4c0bf1a48c76e556876b36f16d92ce3207eccfd61d99f2a0",
+    "ubuntu/libpsl_0.21.2-1.1build1.debian.tar.xz": "70e66bec75c564eee5ce7b1b422a51753601bd64d9738b68551127093321eabc",
+    "ubuntu/libpsl_0.21.2-1.1build1.dsc": "bc742d8be05151fc4e5a5e20f48a03a276dd3094286861f19da1346a0dd761b4",
+    "ubuntu/libpsl_0.21.2.orig.tar.xz": "11e34380f2c81d6e72c710464aae3b680df4ddcc1007826c630fb03c7ca6aa54",
+    "ubuntu/libseccomp_2.5.5-1ubuntu3.1.debian.tar.xz": "ee1e79bc46f18a992ac80f349fdd5cfa0b5f2f6b298473b587c7cf5af89a8df6",
+    "ubuntu/libseccomp_2.5.5-1ubuntu3.1.dsc": "8039579c8cd02819d8246b40483d69e2113979b5acc5900d7206e0b4bebff392",
+    "ubuntu/libseccomp_2.5.5.orig.tar.gz": "248a2c8a4d9b9858aa6baf52712c34afefcf9c9e94b76dce02c1c9aa25fb3375",
+    "ubuntu/libseccomp_2.5.5.orig.tar.gz.asc": "f3bf8a946020d3047581f11fe6ac71971a842115ddb362562b193861ef57d97b",
+    "ubuntu/libselinux_3.5-2ubuntu2.1.debian.tar.xz": "13e47e0983f59235e34f5abe07a2a0d1af3dd2d255962c6a50fac4698c3fe891",
+    "ubuntu/libselinux_3.5-2ubuntu2.1.dsc": "96134581a745ed85b3d5f1c24cdd88fa7d3e29548c0f80a683094ed886b7f150",
+    "ubuntu/libselinux_3.5.orig.tar.gz": "9a3a3705ac13a2ccca2de6d652b6356fead10f36fb33115c185c5ccdf29eec19",
+    "ubuntu/libselinux_3.5.orig.tar.gz.asc": "fd37d441e0c08cabe9ac8f7815f52355bab2011549ec5792424fe18be9e1e015",
+    "ubuntu/libsemanage_3.5-1build5.debian.tar.xz": "522654c2f5e0f508ce7c82f3c58cd394e1b9386226a2a6ac917e7fed9d8895b7",
+    "ubuntu/libsemanage_3.5-1build5.dsc": "352d869841ec5d98fd97791aa9b9896af905d5f3517ec99850f48b095c8c3193",
+    "ubuntu/libsemanage_3.5.orig.tar.gz": "f53534e50247538280ed0d76c6ce81d8fb3939bd64cadb89da10dba42e40dd9c",
+    "ubuntu/libsemanage_3.5.orig.tar.gz.asc": "f9126c861c666f3308b60cea4405c5e686a056113ca3cbd0a5b0e4af7600c8f5",
+    "ubuntu/libsepol_3.5-2build1.debian.tar.xz": "2e0b6c45b864f36e58c2e1fdeed262283e5ad1aed1599ebb43a859a8760b2307",
+    "ubuntu/libsepol_3.5-2build1.dsc": "476b00c198591e38927f274a17dc91bc716e619537f13db58180b10c3daa16e0",
+    "ubuntu/libsepol_3.5.orig.tar.gz": "78fdaf69924db780bac78546e43d9c44074bad798c2c415d0b9bb96d065ee8a2",
+    "ubuntu/libsepol_3.5.orig.tar.gz.asc": "2309ab5e7cd38e2eb9196f92a60e00d4508cb293f1181d34a5a050128c9b7b24",
+    "ubuntu/libsigsegv_2.14-1ubuntu2.debian.tar.xz": "a8f5523437c238a8234e57c0e89ba1ed5068e0e12209c31192b076caccfa367d",
+    "ubuntu/libsigsegv_2.14-1ubuntu2.dsc": "3b7d28542dddce8b06814d1e1ec002b55aad9ed6e983cd2fff997562e63c1047",
+    "ubuntu/libsigsegv_2.14.orig.tar.gz": "cdac3941803364cf81a908499beb79c200ead60b6b5b40cad124fd1e06caa295",
+    "ubuntu/libsigsegv_2.14.orig.tar.gz.asc": "d5046f2f3ccec42e6cd10252d5fd15c7bb1fb6422167f75509e6d6d895516fe8",
+    "ubuntu/libssh_0.10.6-2ubuntu0.5.debian.tar.xz": "5ea1b360802689a7daa557470a661665d95996ab8c0b8dc700083ed8caf8f8d8",
+    "ubuntu/libssh_0.10.6-2ubuntu0.5.dsc": "e5eb4bf8c16013acaab5a3ed38d3c4141b3d5fab317cbc8f11118ddd5b4479ad",
+    "ubuntu/libssh_0.10.6.orig.tar.xz": "1861d498f5b6f1741b6abc73e608478491edcf9c9d4b6630eef6e74596de9dc1",
+    "ubuntu/libssh_0.10.6.orig.tar.xz.asc": "140420406d7796548b0beaf736e73864c32291787cf2bd3983fdbc41741494ae",
+    "ubuntu/libtasn1-6_4.19.0-3ubuntu0.24.04.2.debian.tar.xz": "23e6e79b1be16c247e0d3b152a5838d5d182a788ba053c640b2a120b8b00adad",
+    "ubuntu/libtasn1-6_4.19.0-3ubuntu0.24.04.2.dsc": "a322b48ad14f13ef24ccebcc1feab975817c67000382096146a281d0b4354e7e",
+    "ubuntu/libtasn1-6_4.19.0.orig.tar.gz": "1613f0ac1cf484d6ec0ce3b8c06d56263cc7242f1c23b30d82d23de345a63f7a",
+    "ubuntu/libtasn1-6_4.19.0.orig.tar.gz.asc": "8410c0c004f3509c218a98b276b3308b9c46f48068e8b1a6d9ebfd61ea9f357a",
+    "ubuntu/libunistring_1.1-2build1.1.debian.tar.xz": "06254c8f2ad989bd8ff267fd921d6711fbc0390ff10b99bc3be09fe870baab5e",
+    "ubuntu/libunistring_1.1-2build1.1.dsc": "496ec65625b57a9c5cd0577843814cbd4701ab123a6146a56053dcc9463ae09e",
+    "ubuntu/libunistring_1.1.orig.tar.xz": "827c1eb9cb6e7c738b171745dac0888aa58c5924df2e59239318383de0729b98",
+    "ubuntu/libunistring_1.1.orig.tar.xz.asc": "dadae6c38f85f9e8776231436c601c386924ceb44d511456c61c9be73608933d",
+    "ubuntu/libuv1_1.48.0-1.1build1.debian.tar.xz": "0364c36b70f71781a7227b8a203a6506a582b2a20b164246cc5f999324e5fffd",
+    "ubuntu/libuv1_1.48.0-1.1build1.dsc": "94f1456c284dc8af5ca8646f9484f5631d27f2fb509d9e27b18979c15a43d7ea",
+    "ubuntu/libuv1_1.48.0.orig.tar.gz": "95b66faf3c19b021eb475c0a04c4febfe0442efbd88bca3174d32a1f8957cb71",
+    "ubuntu/libxcrypt_4.4.36-4build1.debian.tar.xz": "b75925e5d2c40abab99f8078c40f2a666125067b080466a38eb670730188ca4a",
+    "ubuntu/libxcrypt_4.4.36-4build1.dsc": "68df46e1ca34983971acc5490a3eec493c6e88cdf4868acdcafba2831e910d78",
+    "ubuntu/libxcrypt_4.4.36.orig.tar.xz": "7b7abbc89f13f5194211aa6861ed954e4fa3a210a4cb64f7e13dc8cf413e7f2a",
+    "ubuntu/libxml2_2.9.14+dfsg-1.3ubuntu3.9.debian.tar.xz": "938b503219dccd976bcb44ef22bdd4a9bbac90c29ca5f65e03992a91386190d1",
+    "ubuntu/libxml2_2.9.14+dfsg-1.3ubuntu3.9.dsc": "12e1225206fc7145115750f5c432fee45943c6ac817eaaa0f7e2f43e5a6c1f00",
+    "ubuntu/libxml2_2.9.14+dfsg.orig.tar.xz": "4fe913dec8b1ab89d13b489b419a8203176ea39e931eaa0d25b17eafb9c279e9",
+    "ubuntu/libzstd_1.5.5+dfsg2-2build1.1.debian.tar.xz": "c1df6d2628b26d085259b8e7ac020eb060e4c1feca98d6103058eda5ded725bc",
+    "ubuntu/libzstd_1.5.5+dfsg2-2build1.1.dsc": "c190a5dff9e7c5b5b1399f0d701bb2c173bc7cbdf14d5e05970f5ac066c25570",
+    "ubuntu/libzstd_1.5.5+dfsg2.orig.tar.xz": "d7cf3c10d416fd999cb8fcf7685d9268ba7bec8eb78121fc2d0d916fa393d22b",
+    "ubuntu/lmdb_0.9.31-1build1.debian.tar.xz": "3a855e1feb674c3718b2fa07fa2d8cee017608ce676189550719a45e18d99a09",
+    "ubuntu/lmdb_0.9.31-1build1.dsc": "9b6bd28732d8d15613539301e300207771a8311f615eac721f6c80b9ffe8dadc",
+    "ubuntu/lmdb_0.9.31.orig.tar.gz": "d35d4f6f46313d62fd342c9dcbf574432919ce5e802d2b6cbe2ebd549821e5c4",
+    "ubuntu/lvm2_2.03.16-3ubuntu3.2.debian.tar.xz": "0d2c6a297fb6bad3702806fabaf04ba30447674ec2cc2c19d8840c001b54f258",
+    "ubuntu/lvm2_2.03.16-3ubuntu3.2.dsc": "1e2568d7611d74c71489e4df69a6a304a29dd78b88e55921a8060f2d84ee8c7b",
+    "ubuntu/lvm2_2.03.16.orig.tar.xz": "9eee14d34f7962ade7d4624114ce7b6bd3d868d210afb72b3769f8c6a082646e",
+    "ubuntu/lz4_1.9.4-1build1.1.debian.tar.xz": "9551b039576db7c87f38c3c847283877de65114cca06488accb9596a7c4f1ead",
+    "ubuntu/lz4_1.9.4-1build1.1.dsc": "ba7b585b15d8b4c955dd68c7af5aa89901cfbb3fdb4f2607ccad51628857d669",
+    "ubuntu/lz4_1.9.4.orig.tar.gz": "0b0e3aa07c8c063ddf40b082bdf7e37a1562bda40a0ff5272957f3e987e0e54b",
+    "ubuntu/mawk_1.3.4.20240123-1build1.debian.tar.xz": "354344a65a3626c162b69430aabc5e4861d5c4ad0c862c3df5a44c6186f273ef",
+    "ubuntu/mawk_1.3.4.20240123-1build1.dsc": "3b5a9d204c10db2e6793e4b0c10e2dda1c7584771567e6a9b8fc4e96e4124979",
+    "ubuntu/mawk_1.3.4.20240123.orig.tar.gz": "a8e319a83744b1f1fb6988dfa189d61887f866e9140cc9a49eb003b2b0655e88",
+    "ubuntu/mawk_1.3.4.20240123.orig.tar.gz.asc": "3b688572de36ecbb8a013cda92e294038324ed2745485e883508e9a6fdbd2472",
+    "ubuntu/mpfr4_4.2.1-1build1.1.debian.tar.xz": "55770c471715c710690129e45c627d77da05547a8f6faee81dd420a9b2b5fded",
+    "ubuntu/mpfr4_4.2.1-1build1.1.dsc": "9adabba2fbe45f0705b630b9b225752d945718ed4742b1c5b9fb1aa0fbcd0766",
+    "ubuntu/mpfr4_4.2.1.orig.tar.xz": "277807353a6726978996945af13e52829e3abd7a9a5b7fb2793894e18f1fcbb2",
+    "ubuntu/ncurses_6.4+20240113-1ubuntu2.2.debian.tar.xz": "c7bbb8483d7ec358fb925a370575d8ebef63d6e455edce140de2ca7b86cf98d1",
+    "ubuntu/ncurses_6.4+20240113-1ubuntu2.2.dsc": "a7dea4604db5c8bc113eda2c4a7353f357618a74d96e404ae98655128e2f03ec",
+    "ubuntu/ncurses_6.4+20240113.orig.tar.gz": "37a12a0f8ae2605012c9a164dd286b0cfa02b51b5055836d09eb3d597fc351b1",
+    "ubuntu/ncurses_6.4+20240113.orig.tar.gz.asc": "b70cfa4f155f61dfa7c085ad1e3f90c73132ad198764d7793a44cd7fdca51f1b",
+    "ubuntu/netbase_6.4.dsc": "dc26cfcaa49fd874cc27c65216b2f8b6d3ad62845b78da4bdf0aea55592af756",
+    "ubuntu/netbase_6.4.tar.xz": "fa6621826ff1150e581bd90bc3c8a4ecafe5df90404f207db6dcdf2c75f26ad7",
+    "ubuntu/netcat-openbsd_1.226-1ubuntu2.debian.tar.xz": "a38ac6010cc761f098229a375e43fc296ecb00b388727bcee61d961048fef81d",
+    "ubuntu/netcat-openbsd_1.226-1ubuntu2.dsc": "bbf2fc7c7de9ee8402f089a49b41749ad327e1e130331d21910e2ffedb9ae632",
+    "ubuntu/netcat-openbsd_1.226.orig.tar.gz": "91c34c3b9ebc18b84e42514ea0328274229afd408853f7e22af897652ee6bfe5",
+    "ubuntu/nettle_3.9.1-2.2build1.1.debian.tar.xz": "be4ad3b97b32c4c4bacc10aa4caef2f3fa0840c21c642407fc3d48c4535b7c5e",
+    "ubuntu/nettle_3.9.1-2.2build1.1.dsc": "db439554d51174b657660a2a47d3d4128838e063f3c9c7da67bb3fe91931d1d2",
+    "ubuntu/nettle_3.9.1.orig.tar.gz": "ccfeff981b0ca71bbd6fbcb054f407c60ffb644389a5be80d6716d5b550c6ce3",
+    "ubuntu/nettle_3.9.1.orig.tar.gz.asc": "9746017a1a7fe60aad4b929ea592bc6ac51e12ea7179f289944eb44828d958af",
+    "ubuntu/nftables_1.0.9-1ubuntu0.1.debian.tar.xz": "bafb52de7247ff92a91b55d923b47c6dc473e74b00fd4585113eeefccd8fc0ac",
+    "ubuntu/nftables_1.0.9-1ubuntu0.1.dsc": "8fa64c8a749b48f9dfcb7ab53e2de3f38ec22a6404b6ada36f1daae790a9a255",
+    "ubuntu/nftables_1.0.9.orig.tar.xz": "a3c304cd9ba061239ee0474f9afb938a9bb99d89b960246f66f0c3a0a85e14cd",
+    "ubuntu/nftables_1.0.9.orig.tar.xz.asc": "2fda73112d367827a0c4bb81aa2dbf6bd3fade6485ed209ba1d261e2b94e19b4",
+    "ubuntu/nghttp2_1.59.0-1ubuntu0.4.debian.tar.xz": "f9f73792cc9c1b903dac7ab6742674e275cc8fb0489c536dba644baccc777119",
+    "ubuntu/nghttp2_1.59.0-1ubuntu0.4.dsc": "2e88ef28abff157157454f097e50256dccafd071206623c0b9294e83457b919b",
+    "ubuntu/nghttp2_1.59.0.orig.tar.gz": "0dd5c980f1262ff5f03676fd99f46f250b66c842f7d864fa1ca9f8453e5f8868",
+    "ubuntu/npth_1.6-3.1build1.debian.tar.xz": "5ca6d77eef4b2d04db11ab1c1a4691769a419ba42391d41ae36cf8a0968ef94e",
+    "ubuntu/npth_1.6-3.1build1.dsc": "7e83a0dc387e8ab8cf152500526fefd46440b2b652470007b57b65b579539a32",
+    "ubuntu/npth_1.6.orig.tar.bz2": "1393abd9adcf0762d34798dc34fdcf4d0d22a8410721e76f1e3afcd1daa4e2d1",
+    "ubuntu/openldap_2.6.10+dfsg-0ubuntu0.24.04.1.debian.tar.xz": "91bdd643954645ce8ba51152516831ce4dcb497a222b88a5df847c4780e5f79e",
+    "ubuntu/openldap_2.6.10+dfsg-0ubuntu0.24.04.1.dsc": "63be3643ff4157d84ef8bd9763fb7252695ceaea46773277600377417ecd21de",
+    "ubuntu/openldap_2.6.10+dfsg.orig.tar.xz": "e871102bda1e42155fd4d6be4825a297e1c593cb0907b84fc7dde888dc847877",
+    "ubuntu/openssl_3.0.13-0ubuntu3.16.debian.tar.xz": "77893129922c917792dd187c2853fb36ce1c98597c442b42d8190252959b7f6c",
+    "ubuntu/openssl_3.0.13-0ubuntu3.16.dsc": "7d1e552a6f519836c352407e521bafdda7552ec6d1ba242968c35fc0e17f47b6",
+    "ubuntu/openssl_3.0.13.orig.tar.gz": "88525753f79d3bec27d2fa7c66aa0b92b3aa9498dafd93d7cfa4b3780cdae313",
+    "ubuntu/p11-kit_0.25.3-4ubuntu2.2.debian.tar.xz": "297b8c03f6cf5bc9a00487ddcfee8ab674040afb7b256029a5eeaf8c5edb18a5",
+    "ubuntu/p11-kit_0.25.3-4ubuntu2.2.dsc": "c3975f825965d6ee899edcfb8bce29d56716b322859df37f200e3aa80d0da69e",
+    "ubuntu/p11-kit_0.25.3.orig.tar.xz": "d8ddce1bb7e898986f9d250ccae7c09ce14d82f1009046d202a0eb1b428b2adc",
+    "ubuntu/pam_1.5.3-5ubuntu5.7.debian.tar.xz": "20a011e675ba5c2fdb22b681c395b3282128dfff119b8bec9adc39f4e87cddf9",
+    "ubuntu/pam_1.5.3-5ubuntu5.7.dsc": "df25ccfc35891011b8976281516ea239a6eb2cb17bec07c17d4ee2fc7a7be96e",
+    "ubuntu/pam_1.5.3.orig.tar.xz": "7ac4b50feee004a9fa88f1dfd2d2fa738a82896763050cd773b3c54b0a818283",
+    "ubuntu/pcre2_10.42-4ubuntu2.1.diff.gz": "29c5cb6ff392544bf48bd3ec2a98aa0da5297457fa4f4199a1c392ec3d41f19c",
+    "ubuntu/pcre2_10.42-4ubuntu2.1.dsc": "6272177be186d6f8ad16b668bb508b2e07645e05b5b8402d446492cb6d18104e",
+    "ubuntu/pcre2_10.42.orig.tar.gz": "c33b418e3b936ee3153de2c61cc638e7e4fe3156022a5c77d0711bcbb9d64f1f",
+    "ubuntu/perl_5.38.2-3.2ubuntu0.6.debian.tar.xz": "5c94f7708145fbe1ca97233c5c83c2bb70c6875013fc17ac50137ec735242bb7",
+    "ubuntu/perl_5.38.2-3.2ubuntu0.6.dsc": "ece66ceafd3502733ece75ac7aaae4122123fde84921d95d5b8151ebf115057f",
+    "ubuntu/perl_5.38.2.orig-regen-configure.tar.xz": "4d1b34cc058f9963cb89785ecc040d57f6d7725cd83329cfa4ef8b27566454d2",
+    "ubuntu/perl_5.38.2.orig.tar.xz": "d91115e90b896520e83d4de6b52f8254ef2b70a8d545ffab33200ea9f1cf29e8",
+    "ubuntu/pinentry_1.2.1-3ubuntu5.debian.tar.xz": "30d64a000227417679ab2f80c6c5c37145b7b915b790e504bdbad09ef88012d6",
+    "ubuntu/pinentry_1.2.1-3ubuntu5.dsc": "ac13bc692f7af06d35d9d46d7a110b72341e53ddad6ea55df9b30cfc33b38f07",
+    "ubuntu/pinentry_1.2.1.orig.tar.bz2": "457a185e5a85238fb945a955dc6352ab962dc8b48720b62fc9fa48c7540a4067",
+    "ubuntu/pinentry_1.2.1.orig.tar.bz2.asc": "9f7d9c7509e4ff4161a043893d76183bd975230fcad671b643c90f78e500ba95",
+    "ubuntu/procps_4.0.4-4ubuntu3.3.debian.tar.xz": "895493786388b9ffa8a9ba894f473371cd4bbd2aa5089a8327cfdf00cf7cbc2d",
+    "ubuntu/procps_4.0.4-4ubuntu3.3.dsc": "0a57e936bcadc6f226991a0d02f20a190763eba59a830784ef51669c04745d58",
+    "ubuntu/procps_4.0.4.orig.tar.xz": "22870d6feb2478adb617ce4f09a787addaf2d260c5a8aa7b17d889a962c5e42e",
+    "ubuntu/readline_8.2-4build1.debian.tar.xz": "d3b4bfa92d0026f5d3f5d2b21e2bf6d8ae163f9ccdebdcef20afde77901c7b70",
+    "ubuntu/readline_8.2-4build1.dsc": "442c688eb851652987a0b1a7f85d236c6fa445757f188bc275ec475d0fabf22f",
+    "ubuntu/readline_8.2.orig.tar.gz": "3feb7171f16a84ee82ca18a36d7b9be109a52c04f492a053331d7d1095007c35",
+    "ubuntu/rtmpdump_2.4+20151223.gitfa8646d.1-2build7.debian.tar.xz": "bbc24a32c42f37238190944ecfc640387373d7dfa8e570fa23353d6a1f0e3d0b",
+    "ubuntu/rtmpdump_2.4+20151223.gitfa8646d.1-2build7.dsc": "076006f9c26e898a8da252ee8dbd6f04252833fac08898b9fd9344ccba848853",
+    "ubuntu/rtmpdump_2.4+20151223.gitfa8646d.1.orig.tar.gz": "5c032f5c8cc2937eb55a81a94effdfed3b0a0304b6376147b86f951e225e3ab5",
+    "ubuntu/sed_4.9-2ubuntu0.24.04.1.debian.tar.xz": "81ac2757638817c9628f51dbdf425e0bfc820dd8a97e2bdef10cdaeba1dec7c0",
+    "ubuntu/sed_4.9-2ubuntu0.24.04.1.dsc": "b62f26deec4d06d8d096d577e0a0eb004f4e79da2c75ed5338e1ed8c175f9fcf",
+    "ubuntu/sed_4.9.orig.tar.xz": "6e226b732e1cd739464ad6862bd1a1aba42d7982922da7a53519631d24975181",
+    "ubuntu/sensible-utils_0.0.22.dsc": "2a49b3be4b85b3f455f9c15c26f9bfb6c508496025a414f32649b16fe6326773",
+    "ubuntu/sensible-utils_0.0.22.tar.xz": "c744d604ad6e1f3c8b4831cd84d653cf86bf9867a856724bf3f4fceb2de215b5",
+    "ubuntu/shadow_4.13+dfsg1-4ubuntu3.2.debian.tar.xz": "ff01a3e94111ca8c4dca097ebe54edbee912cbdeba042c214bfa4c34e7839f61",
+    "ubuntu/shadow_4.13+dfsg1-4ubuntu3.2.dsc": "0be17fd044f3e23f714a5b286a04bd040f246af1ac32fcc406b63756baa9c368",
+    "ubuntu/shadow_4.13+dfsg1.orig.tar.xz": "a8bb3a2aceff1cbe39d0f50687dcc1d7e7be0516a9d954d8e2eedb93f5906207",
+    "ubuntu/sqlite3_3.45.1-1ubuntu2.8.debian.tar.xz": "d543bf91c6f14ccd52ebe44d6ef3b360196b2596e0a7ca86089aef5fc52f5ec0",
+    "ubuntu/sqlite3_3.45.1-1ubuntu2.8.dsc": "f3c0a904d2d2386e81b39774f2a2f00f92c42adb2f141ff59cc6a347c4487a69",
+    "ubuntu/sqlite3_3.45.1.orig-www.tar.xz": "79b60798195a024d447e661e5bbc1eb40af50387ebf840e6f581190cc02064b6",
+    "ubuntu/sqlite3_3.45.1.orig.tar.xz": "e32e817f7b4166a301f60b14a711871bfab7d35c1d7e29b585dfc479ae150aa4",
+    "ubuntu/systemd_255.4-1ubuntu8.17.debian.tar.xz": "4695ff34f83b1f7e6e02bf3cfac2e2a44ac76b6cfc5a38c0081bac6919d547bb",
+    "ubuntu/systemd_255.4-1ubuntu8.17.dsc": "8e5f4e5a7b7ee457214be1efd1ea1d380186c38b146d8c98af5da0f625d3c396",
+    "ubuntu/systemd_255.4.orig.tar.gz": "96e75bd08c57ad401677456fb88ef54a9f05bb1695693013bc6ecce839640fd5",
+    "ubuntu/sysvinit_3.08-6ubuntu3.debian.tar.xz": "1a8a8365cdc393e349fc115094a8ef7c52082ed22e7f1337ab1b8dd6b5e0103b",
+    "ubuntu/sysvinit_3.08-6ubuntu3.dsc": "e440a6f97aaf42f8067f87e2589dd7636bd0e95bc6fcb8b902f50631f83157c0",
+    "ubuntu/sysvinit_3.08.orig.tar.gz": "325e42ae4ae5ae3e4d989e0604aeb5e4eae5f3ee21e401db3c79000718f8c836",
+    "ubuntu/tar_1.35+dfsg-3ubuntu0.4.debian.tar.xz": "66111c3bd3ca8c4d619ae67c6f80eaeee46f239dbfecad78d1f08ce0a924a133",
+    "ubuntu/tar_1.35+dfsg-3ubuntu0.4.dsc": "08ed7d5680f4d342723e0ef5c568c95be1c5053b4c2d0f2723b63ddd378a908d",
+    "ubuntu/tar_1.35+dfsg.orig.tar.xz": "9ae57e981c1e73c0eebc2b26c9b0c4497fe310ef1d516ea430efb5470b71f7a8",
+    "ubuntu/ubuntu-keyring_2023.11.28.1.dsc": "c71c8e5a1dd5e8ef682b7104645a88f0bc9eeb9380bf64288adcf78f40bcf68b",
+    "ubuntu/ubuntu-keyring_2023.11.28.1.tar.xz": "aecd455ae15561371d6e454f121f079f0641d5e1b579a5563a2bc363fc74aa2e",
+    "ubuntu/unminimize_0.2.1.dsc": "04cec314558830aba7f2c0a47fc156875c083db3f711d5525bea25a9a26fb638",
+    "ubuntu/unminimize_0.2.1.tar.xz": "f15f4c1df275fa116024ea1142730f524cc552da1222effeec981aebc04f7461",
+    "ubuntu/util-linux_2.39.3-9ubuntu6.6.debian.tar.xz": "d63476e26c149179ae8a19f4c701e27cf9235c3df2482714d369211683824e37",
+    "ubuntu/util-linux_2.39.3-9ubuntu6.6.dsc": "b30cb22e05473810a48e14db8b5ea7786bb38aed7617dc89ad4f81cd7c6c3397",
+    "ubuntu/util-linux_2.39.3.orig.tar.xz": "7b6605e48d1a49f43cc4b4cfc59f313d0dd5402fa40b96810bd572e167dfed0f",
+    "ubuntu/xxhash_0.8.2-2build1.debian.tar.xz": "2ec69c1d868b3634a91c6f9e4921b86101fd9384b186f2401fdbac532c78830c",
+    "ubuntu/xxhash_0.8.2-2build1.dsc": "a500864f82084ce3c431c0f4a233fb1c0c48a3a8486cc49989ea073e05814d31",
+    "ubuntu/xxhash_0.8.2.orig.tar.gz": "baee0c6afd4f03165de7a4e67988d16f0f2b257b51d0e3cb91909302a26a79c4",
+    "ubuntu/xz-utils_5.6.1+really5.4.5-1ubuntu0.3.debian.tar.xz": "03f321901f6e1c56235cd7ae6a6784c104b1b1060ca3afa5a5806e345ee72e01",
+    "ubuntu/xz-utils_5.6.1+really5.4.5-1ubuntu0.3.dsc": "34c2be772533a5c31e881bc620cedaf9be3d315feb677f00e12c136c299d126a",
+    "ubuntu/xz-utils_5.6.1+really5.4.5.orig.tar.xz": "da9dec6c12cf2ecf269c31ab65b5de18e8e52b96f35d5bcd08c12b43e6878803",
+    "ubuntu/zlib_1.3.dfsg-3.1ubuntu2.2.debian.tar.xz": "de1c2d532ecb7caf99ccb905fb03c37fe0c8117fbdc79d05be4474b71e6398c2",
+    "ubuntu/zlib_1.3.dfsg-3.1ubuntu2.2.dsc": "56a7cd029863cbddafce831e4e63cccfa84017f93617929cb7c02f80bb5a122a",
+    "ubuntu/zlib_1.3.dfsg.orig.tar.xz": "5eea0322c1c21c75cad3b607ac1c43ff5c71e014b8ac4a34300b5e2b80d02e70"
+  },
+  "kernels": [
+    {
+      "component": "full/vmlinux-x86_64",
+      "config": "kernel/config-full-x86_64",
+      "configSHA256": "d0d4bc368092c83fe965f30fbd374c33167abcdf3e2f33708ace8b25e4514a6b",
+      "licenses": [
+        "GPL-2.0-only"
+      ],
+      "version": "Linux 6.18.60"
+    },
+    {
+      "component": "lean/vmlinux.container",
+      "config": "kernel/config-lean-x86_64",
+      "configSHA256": "b5cdb95c57a5115fa554626b506c7a1f5a13e02c3513ad5e2a687eacc6672324",
+      "licenses": [
+        "GPL-2.0-only"
+      ],
+      "version": "Linux 6.18.60"
+    }
+  ],
+  "notCopied": [
+    {
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "package": "containerd.io",
+      "upstream": "https://download.docker.com/linux/ubuntu (source: github.com/docker, github.com/containerd)",
+      "version": "2.3.6-1~ubuntu.24.04~noble"
+    },
+    {
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "package": "docker-buildx-plugin",
+      "upstream": "https://download.docker.com/linux/ubuntu (source: github.com/docker, github.com/containerd)",
+      "version": "0.37.1-1~ubuntu.24.04~noble"
+    },
+    {
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "package": "docker-ce",
+      "upstream": "https://download.docker.com/linux/ubuntu (source: github.com/docker, github.com/containerd)",
+      "version": "5:29.8.2-1~ubuntu.24.04~noble"
+    },
+    {
+      "licenses": [
+        "Apache-2.0"
+      ],
+      "package": "docker-ce-cli",
+      "upstream": "https://download.docker.com/linux/ubuntu (source: github.com/docker, github.com/containerd)",
+      "version": "5:29.8.2-1~ubuntu.24.04~noble"
+    }
+  ],
+  "runtime": "0.1.0-linux-amd64.5",
+  "runtimeBuildCommit": "bb4cb563dc88b7e658d680fcec585f9322d0b99b",
+  "schemaVersion": 1,
+  "ubuntu": {
+    "packages": [
+      {
+        "package": "adduser",
+        "source": "adduser",
+        "sourceVersion": "3.137ubuntu1",
+        "version": "3.137ubuntu1"
+      },
+      {
+        "package": "apt",
+        "source": "apt",
+        "sourceVersion": "2.8.3",
+        "version": "2.8.3"
+      },
+      {
+        "package": "base-files",
+        "source": "base-files",
+        "sourceVersion": "13ubuntu10.5",
+        "version": "13ubuntu10.5"
+      },
+      {
+        "package": "base-passwd",
+        "source": "base-passwd",
+        "sourceVersion": "3.6.3build1",
+        "version": "3.6.3build1"
+      },
+      {
+        "package": "bash",
+        "source": "bash",
+        "sourceVersion": "5.2.21-2ubuntu4",
+        "version": "5.2.21-2ubuntu4"
+      },
+      {
+        "package": "bind9-dnsutils",
+        "source": "bind9",
+        "sourceVersion": "1:9.18.39-0ubuntu0.24.04.7",
+        "version": "1:9.18.39-0ubuntu0.24.04.7"
+      },
+      {
+        "package": "bind9-host",
+        "source": "bind9",
+        "sourceVersion": "1:9.18.39-0ubuntu0.24.04.7",
+        "version": "1:9.18.39-0ubuntu0.24.04.7"
+      },
+      {
+        "package": "bind9-libs",
+        "source": "bind9",
+        "sourceVersion": "1:9.18.39-0ubuntu0.24.04.7",
+        "version": "1:9.18.39-0ubuntu0.24.04.7"
+      },
+      {
+        "package": "bridge-utils",
+        "source": "bridge-utils",
+        "sourceVersion": "1.7.1-1ubuntu2",
+        "version": "1.7.1-1ubuntu2"
+      },
+      {
+        "package": "bsdutils",
+        "source": "util-linux",
+        "sourceVersion": "2.39.3-9ubuntu6.6",
+        "version": "1:2.39.3-9ubuntu6.6"
+      },
+      {
+        "package": "ca-certificates",
+        "source": "ca-certificates",
+        "sourceVersion": "20260601~24.04.1",
+        "version": "20260601~24.04.1"
+      },
+      {
+        "package": "containerd.io",
+        "source": "containerd.io",
+        "sourceVersion": "2.3.6-1~ubuntu.24.04~noble",
+        "version": "2.3.6-1~ubuntu.24.04~noble"
+      },
+      {
+        "package": "coreutils",
+        "source": "coreutils",
+        "sourceVersion": "9.4-3ubuntu6.3",
+        "version": "9.4-3ubuntu6.3"
+      },
+      {
+        "package": "curl",
+        "source": "curl",
+        "sourceVersion": "8.5.0-2ubuntu10.15",
+        "version": "8.5.0-2ubuntu10.15"
+      },
+      {
+        "package": "dash",
+        "source": "dash",
+        "sourceVersion": "0.5.12-6ubuntu5",
+        "version": "0.5.12-6ubuntu5"
+      },
+      {
+        "package": "dbus",
+        "source": "dbus",
+        "sourceVersion": "1.14.10-4ubuntu4.1",
+        "version": "1.14.10-4ubuntu4.1"
+      },
+      {
+        "package": "dbus-bin",
+        "source": "dbus",
+        "sourceVersion": "1.14.10-4ubuntu4.1",
+        "version": "1.14.10-4ubuntu4.1"
+      },
+      {
+        "package": "dbus-daemon",
+        "source": "dbus",
+        "sourceVersion": "1.14.10-4ubuntu4.1",
+        "version": "1.14.10-4ubuntu4.1"
+      },
+      {
+        "package": "dbus-session-bus-common",
+        "source": "dbus",
+        "sourceVersion": "1.14.10-4ubuntu4.1",
+        "version": "1.14.10-4ubuntu4.1"
+      },
+      {
+        "package": "dbus-system-bus-common",
+        "source": "dbus",
+        "sourceVersion": "1.14.10-4ubuntu4.1",
+        "version": "1.14.10-4ubuntu4.1"
+      },
+      {
+        "package": "dbus-user-session",
+        "source": "dbus",
+        "sourceVersion": "1.14.10-4ubuntu4.1",
+        "version": "1.14.10-4ubuntu4.1"
+      },
+      {
+        "package": "debconf",
+        "source": "debconf",
+        "sourceVersion": "1.5.86ubuntu1",
+        "version": "1.5.86ubuntu1"
+      },
+      {
+        "package": "debianutils",
+        "source": "debianutils",
+        "sourceVersion": "5.17build1",
+        "version": "5.17build1"
+      },
+      {
+        "package": "diffutils",
+        "source": "diffutils",
+        "sourceVersion": "1:3.10-1ubuntu0.1",
+        "version": "1:3.10-1ubuntu0.1"
+      },
+      {
+        "package": "dirmngr",
+        "source": "gnupg2",
+        "sourceVersion": "2.4.4-2ubuntu17.6",
+        "version": "2.4.4-2ubuntu17.6"
+      },
+      {
+        "package": "dnsutils",
+        "source": "bind9",
+        "sourceVersion": "1:9.18.39-0ubuntu0.24.04.7",
+        "version": "1:9.18.39-0ubuntu0.24.04.7"
+      },
+      {
+        "package": "docker-buildx-plugin",
+        "source": "docker-buildx-plugin",
+        "sourceVersion": "0.37.1-1~ubuntu.24.04~noble",
+        "version": "0.37.1-1~ubuntu.24.04~noble"
+      },
+      {
+        "package": "docker-ce",
+        "source": "docker-ce",
+        "sourceVersion": "5:29.8.2-1~ubuntu.24.04~noble",
+        "version": "5:29.8.2-1~ubuntu.24.04~noble"
+      },
+      {
+        "package": "docker-ce-cli",
+        "source": "docker-ce",
+        "sourceVersion": "5:29.8.2-1~ubuntu.24.04~noble",
+        "version": "5:29.8.2-1~ubuntu.24.04~noble"
+      },
+      {
+        "package": "dpkg",
+        "source": "dpkg",
+        "sourceVersion": "1.22.6ubuntu6.6",
+        "version": "1.22.6ubuntu6.6"
+      },
+      {
+        "package": "e2fsprogs",
+        "source": "e2fsprogs",
+        "sourceVersion": "1.47.0-2.4~exp1ubuntu4.1",
+        "version": "1.47.0-2.4~exp1ubuntu4.1"
+      },
+      {
+        "package": "findutils",
+        "source": "findutils",
+        "sourceVersion": "4.9.0-5build1",
+        "version": "4.9.0-5build1"
+      },
+      {
+        "package": "gawk",
+        "source": "gawk",
+        "sourceVersion": "1:5.2.1-2ubuntu0.1",
+        "version": "1:5.2.1-2ubuntu0.1"
+      },
+      {
+        "package": "gcc-14-base",
+        "source": "gcc-14",
+        "sourceVersion": "14.2.0-4ubuntu2~24.04.1",
+        "version": "14.2.0-4ubuntu2~24.04.1"
+      },
+      {
+        "package": "gnupg",
+        "source": "gnupg2",
+        "sourceVersion": "2.4.4-2ubuntu17.6",
+        "version": "2.4.4-2ubuntu17.6"
+      },
+      {
+        "package": "gnupg-utils",
+        "source": "gnupg2",
+        "sourceVersion": "2.4.4-2ubuntu17.6",
+        "version": "2.4.4-2ubuntu17.6"
+      },
+      {
+        "package": "gpg",
+        "source": "gnupg2",
+        "sourceVersion": "2.4.4-2ubuntu17.6",
+        "version": "2.4.4-2ubuntu17.6"
+      },
+      {
+        "package": "gpg-agent",
+        "source": "gnupg2",
+        "sourceVersion": "2.4.4-2ubuntu17.6",
+        "version": "2.4.4-2ubuntu17.6"
+      },
+      {
+        "package": "gpgconf",
+        "source": "gnupg2",
+        "sourceVersion": "2.4.4-2ubuntu17.6",
+        "version": "2.4.4-2ubuntu17.6"
+      },
+      {
+        "package": "gpgsm",
+        "source": "gnupg2",
+        "sourceVersion": "2.4.4-2ubuntu17.6",
+        "version": "2.4.4-2ubuntu17.6"
+      },
+      {
+        "package": "gpgv",
+        "source": "gnupg2",
+        "sourceVersion": "2.4.4-2ubuntu17.6",
+        "version": "2.4.4-2ubuntu17.6"
+      },
+      {
+        "package": "grep",
+        "source": "grep",
+        "sourceVersion": "3.11-4build1",
+        "version": "3.11-4build1"
+      },
+      {
+        "package": "gzip",
+        "source": "gzip",
+        "sourceVersion": "1.12-1ubuntu3.2",
+        "version": "1.12-1ubuntu3.2"
+      },
+      {
+        "package": "hostname",
+        "source": "hostname",
+        "sourceVersion": "3.23+nmu2ubuntu2",
+        "version": "3.23+nmu2ubuntu2"
+      },
+      {
+        "package": "init-system-helpers",
+        "source": "init-system-helpers",
+        "sourceVersion": "1.66ubuntu1",
+        "version": "1.66ubuntu1"
+      },
+      {
+        "package": "iproute2",
+        "source": "iproute2",
+        "sourceVersion": "6.1.0-1ubuntu6.4",
+        "version": "6.1.0-1ubuntu6.4"
+      },
+      {
+        "package": "iptables",
+        "source": "iptables",
+        "sourceVersion": "1.8.10-3ubuntu2",
+        "version": "1.8.10-3ubuntu2"
+      },
+      {
+        "package": "jq",
+        "source": "jq",
+        "sourceVersion": "1.7.1-3ubuntu0.24.04.2",
+        "version": "1.7.1-3ubuntu0.24.04.2"
+      },
+      {
+        "package": "keyboxd",
+        "source": "gnupg2",
+        "sourceVersion": "2.4.4-2ubuntu17.6",
+        "version": "2.4.4-2ubuntu17.6"
+      },
+      {
+        "package": "kmod",
+        "source": "kmod",
+        "sourceVersion": "31+20240202-2ubuntu7.2",
+        "version": "31+20240202-2ubuntu7.2"
+      },
+      {
+        "package": "libacl1",
+        "source": "acl",
+        "sourceVersion": "2.3.2-1build1.1",
+        "version": "2.3.2-1build1.1"
+      },
+      {
+        "package": "libapparmor1",
+        "source": "apparmor",
+        "sourceVersion": "4.0.1really4.0.1-0ubuntu0.24.04.8",
+        "version": "4.0.1really4.0.1-0ubuntu0.24.04.8"
+      },
+      {
+        "package": "libapt-pkg6.0t64",
+        "source": "apt",
+        "sourceVersion": "2.8.3",
+        "version": "2.8.3"
+      },
+      {
+        "package": "libargon2-1",
+        "source": "argon2",
+        "sourceVersion": "0~20190702+dfsg-4build1",
+        "version": "0~20190702+dfsg-4build1"
+      },
+      {
+        "package": "libassuan0",
+        "source": "libassuan",
+        "sourceVersion": "2.5.6-1build1",
+        "version": "2.5.6-1build1"
+      },
+      {
+        "package": "libattr1",
+        "source": "attr",
+        "sourceVersion": "1:2.5.2-1ubuntu0.1",
+        "version": "1:2.5.2-1ubuntu0.1"
+      },
+      {
+        "package": "libaudit-common",
+        "source": "audit",
+        "sourceVersion": "1:3.1.2-2.1build1.1",
+        "version": "1:3.1.2-2.1build1.1"
+      },
+      {
+        "package": "libaudit1",
+        "source": "audit",
+        "sourceVersion": "1:3.1.2-2.1build1.1",
+        "version": "1:3.1.2-2.1build1.1"
+      },
+      {
+        "package": "libblkid1",
+        "source": "util-linux",
+        "sourceVersion": "2.39.3-9ubuntu6.6",
+        "version": "2.39.3-9ubuntu6.6"
+      },
+      {
+        "package": "libbpf1",
+        "source": "libbpf",
+        "sourceVersion": "1.3.0-2build2",
+        "version": "1:1.3.0-2build2"
+      },
+      {
+        "package": "libbrotli1",
+        "source": "brotli",
+        "sourceVersion": "1.1.0-2build2",
+        "version": "1.1.0-2build2"
+      },
+      {
+        "package": "libbsd0",
+        "source": "libbsd",
+        "sourceVersion": "0.12.1-1build1.1",
+        "version": "0.12.1-1build1.1"
+      },
+      {
+        "package": "libbz2-1.0",
+        "source": "bzip2",
+        "sourceVersion": "1.0.8-5.1ubuntu0.1",
+        "version": "1.0.8-5.1ubuntu0.1"
+      },
+      {
+        "package": "libc-bin",
+        "source": "glibc",
+        "sourceVersion": "2.39-0ubuntu8.9",
+        "version": "2.39-0ubuntu8.9"
+      },
+      {
+        "package": "libc6",
+        "source": "glibc",
+        "sourceVersion": "2.39-0ubuntu8.9",
+        "version": "2.39-0ubuntu8.9"
+      },
+      {
+        "package": "libcap-ng0",
+        "source": "libcap-ng",
+        "sourceVersion": "0.8.4-2build2",
+        "version": "0.8.4-2build2"
+      },
+      {
+        "package": "libcap2",
+        "source": "libcap2",
+        "sourceVersion": "1:2.66-5ubuntu2.4",
+        "version": "1:2.66-5ubuntu2.4"
+      },
+      {
+        "package": "libcap2-bin",
+        "source": "libcap2",
+        "sourceVersion": "1:2.66-5ubuntu2.4",
+        "version": "1:2.66-5ubuntu2.4"
+      },
+      {
+        "package": "libcom-err2",
+        "source": "e2fsprogs",
+        "sourceVersion": "1.47.0-2.4~exp1ubuntu4.1",
+        "version": "1.47.0-2.4~exp1ubuntu4.1"
+      },
+      {
+        "package": "libcrypt1",
+        "source": "libxcrypt",
+        "sourceVersion": "1:4.4.36-4build1",
+        "version": "1:4.4.36-4build1"
+      },
+      {
+        "package": "libcryptsetup12",
+        "source": "cryptsetup",
+        "sourceVersion": "2:2.7.0-1ubuntu4.2",
+        "version": "2:2.7.0-1ubuntu4.2"
+      },
+      {
+        "package": "libcurl4t64",
+        "source": "curl",
+        "sourceVersion": "8.5.0-2ubuntu10.15",
+        "version": "8.5.0-2ubuntu10.15"
+      },
+      {
+        "package": "libdb5.3t64",
+        "source": "db5.3",
+        "sourceVersion": "5.3.28+dfsg2-7",
+        "version": "5.3.28+dfsg2-7"
+      },
+      {
+        "package": "libdbus-1-3",
+        "source": "dbus",
+        "sourceVersion": "1.14.10-4ubuntu4.1",
+        "version": "1.14.10-4ubuntu4.1"
+      },
+      {
+        "package": "libdebconfclient0",
+        "source": "cdebconf",
+        "sourceVersion": "0.271ubuntu3",
+        "version": "0.271ubuntu3"
+      },
+      {
+        "package": "libdevmapper1.02.1",
+        "source": "lvm2",
+        "sourceVersion": "2.03.16-3ubuntu3.2",
+        "version": "2:1.02.185-3ubuntu3.2"
+      },
+      {
+        "package": "libedit2",
+        "source": "libedit",
+        "sourceVersion": "3.1-20230828-1build1",
+        "version": "3.1-20230828-1build1"
+      },
+      {
+        "package": "libelf1t64",
+        "source": "elfutils",
+        "sourceVersion": "0.190-1.1ubuntu0.1",
+        "version": "0.190-1.1ubuntu0.1"
+      },
+      {
+        "package": "libexpat1",
+        "source": "expat",
+        "sourceVersion": "2.6.1-2ubuntu0.6",
+        "version": "2.6.1-2ubuntu0.6"
+      },
+      {
+        "package": "libext2fs2t64",
+        "source": "e2fsprogs",
+        "sourceVersion": "1.47.0-2.4~exp1ubuntu4.1",
+        "version": "1.47.0-2.4~exp1ubuntu4.1"
+      },
+      {
+        "package": "libfdisk1",
+        "source": "util-linux",
+        "sourceVersion": "2.39.3-9ubuntu6.6",
+        "version": "2.39.3-9ubuntu6.6"
+      },
+      {
+        "package": "libffi8",
+        "source": "libffi",
+        "sourceVersion": "3.4.6-1build1",
+        "version": "3.4.6-1build1"
+      },
+      {
+        "package": "libgcc-s1",
+        "source": "gcc-14",
+        "sourceVersion": "14.2.0-4ubuntu2~24.04.1",
+        "version": "14.2.0-4ubuntu2~24.04.1"
+      },
+      {
+        "package": "libgcrypt20",
+        "source": "libgcrypt20",
+        "sourceVersion": "1.10.3-2ubuntu0.2",
+        "version": "1.10.3-2ubuntu0.2"
+      },
+      {
+        "package": "libgmp10",
+        "source": "gmp",
+        "sourceVersion": "2:6.3.0+dfsg-2ubuntu6.1",
+        "version": "2:6.3.0+dfsg-2ubuntu6.1"
+      },
+      {
+        "package": "libgnutls30t64",
+        "source": "gnutls28",
+        "sourceVersion": "3.8.3-1.1ubuntu3.6",
+        "version": "3.8.3-1.1ubuntu3.6"
+      },
+      {
+        "package": "libgpg-error0",
+        "source": "libgpg-error",
+        "sourceVersion": "1.47-3build2.1",
+        "version": "1.47-3build2.1"
+      },
+      {
+        "package": "libgssapi-krb5-2",
+        "source": "krb5",
+        "sourceVersion": "1.20.1-6ubuntu2.10",
+        "version": "1.20.1-6ubuntu2.10"
+      },
+      {
+        "package": "libhogweed6t64",
+        "source": "nettle",
+        "sourceVersion": "3.9.1-2.2build1.1",
+        "version": "3.9.1-2.2build1.1"
+      },
+      {
+        "package": "libicu74",
+        "source": "icu",
+        "sourceVersion": "74.2-1ubuntu3.1",
+        "version": "74.2-1ubuntu3.1"
+      },
+      {
+        "package": "libidn2-0",
+        "source": "libidn2",
+        "sourceVersion": "2.3.7-2build1.1",
+        "version": "2.3.7-2build1.1"
+      },
+      {
+        "package": "libip4tc2",
+        "source": "iptables",
+        "sourceVersion": "1.8.10-3ubuntu2",
+        "version": "1.8.10-3ubuntu2"
+      },
+      {
+        "package": "libip6tc2",
+        "source": "iptables",
+        "sourceVersion": "1.8.10-3ubuntu2",
+        "version": "1.8.10-3ubuntu2"
+      },
+      {
+        "package": "libjansson4",
+        "source": "jansson",
+        "sourceVersion": "2.14-2build2",
+        "version": "2.14-2build2"
+      },
+      {
+        "package": "libjq1",
+        "source": "jq",
+        "sourceVersion": "1.7.1-3ubuntu0.24.04.2",
+        "version": "1.7.1-3ubuntu0.24.04.2"
+      },
+      {
+        "package": "libjson-c5",
+        "source": "json-c",
+        "sourceVersion": "0.17-1build1",
+        "version": "0.17-1build1"
+      },
+      {
+        "package": "libk5crypto3",
+        "source": "krb5",
+        "sourceVersion": "1.20.1-6ubuntu2.10",
+        "version": "1.20.1-6ubuntu2.10"
+      },
+      {
+        "package": "libkeyutils1",
+        "source": "keyutils",
+        "sourceVersion": "1.6.3-3build1",
+        "version": "1.6.3-3build1"
+      },
+      {
+        "package": "libkmod2",
+        "source": "kmod",
+        "sourceVersion": "31+20240202-2ubuntu7.2",
+        "version": "31+20240202-2ubuntu7.2"
+      },
+      {
+        "package": "libkrb5-3",
+        "source": "krb5",
+        "sourceVersion": "1.20.1-6ubuntu2.10",
+        "version": "1.20.1-6ubuntu2.10"
+      },
+      {
+        "package": "libkrb5support0",
+        "source": "krb5",
+        "sourceVersion": "1.20.1-6ubuntu2.10",
+        "version": "1.20.1-6ubuntu2.10"
+      },
+      {
+        "package": "libksba8",
+        "source": "libksba",
+        "sourceVersion": "1.6.6-1build1",
+        "version": "1.6.6-1build1"
+      },
+      {
+        "package": "libldap2",
+        "source": "openldap",
+        "sourceVersion": "2.6.10+dfsg-0ubuntu0.24.04.1",
+        "version": "2.6.10+dfsg-0ubuntu0.24.04.1"
+      },
+      {
+        "package": "liblmdb0",
+        "source": "lmdb",
+        "sourceVersion": "0.9.31-1build1",
+        "version": "0.9.31-1build1"
+      },
+      {
+        "package": "liblz4-1",
+        "source": "lz4",
+        "sourceVersion": "1.9.4-1build1.1",
+        "version": "1.9.4-1build1.1"
+      },
+      {
+        "package": "liblzma5",
+        "source": "xz-utils",
+        "sourceVersion": "5.6.1+really5.4.5-1ubuntu0.3",
+        "version": "5.6.1+really5.4.5-1ubuntu0.3"
+      },
+      {
+        "package": "libmaxminddb0",
+        "source": "libmaxminddb",
+        "sourceVersion": "1.9.1-1build1",
+        "version": "1.9.1-1build1"
+      },
+      {
+        "package": "libmd0",
+        "source": "libmd",
+        "sourceVersion": "1.1.0-2build1.1",
+        "version": "1.1.0-2build1.1"
+      },
+      {
+        "package": "libmnl0",
+        "source": "libmnl",
+        "sourceVersion": "1.0.5-2build1",
+        "version": "1.0.5-2build1"
+      },
+      {
+        "package": "libmount1",
+        "source": "util-linux",
+        "sourceVersion": "2.39.3-9ubuntu6.6",
+        "version": "2.39.3-9ubuntu6.6"
+      },
+      {
+        "package": "libmpfr6",
+        "source": "mpfr4",
+        "sourceVersion": "4.2.1-1build1.1",
+        "version": "4.2.1-1build1.1"
+      },
+      {
+        "package": "libncursesw6",
+        "source": "ncurses",
+        "sourceVersion": "6.4+20240113-1ubuntu2.2",
+        "version": "6.4+20240113-1ubuntu2.2"
+      },
+      {
+        "package": "libnetfilter-conntrack3",
+        "source": "libnetfilter-conntrack",
+        "sourceVersion": "1.0.9-6build1",
+        "version": "1.0.9-6build1"
+      },
+      {
+        "package": "libnettle8t64",
+        "source": "nettle",
+        "sourceVersion": "3.9.1-2.2build1.1",
+        "version": "3.9.1-2.2build1.1"
+      },
+      {
+        "package": "libnfnetlink0",
+        "source": "libnfnetlink",
+        "sourceVersion": "1.0.2-2build1",
+        "version": "1.0.2-2build1"
+      },
+      {
+        "package": "libnftables1",
+        "source": "nftables",
+        "sourceVersion": "1.0.9-1ubuntu0.1",
+        "version": "1.0.9-1ubuntu0.1"
+      },
+      {
+        "package": "libnftnl11",
+        "source": "libnftnl",
+        "sourceVersion": "1.2.6-2build1",
+        "version": "1.2.6-2build1"
+      },
+      {
+        "package": "libnghttp2-14",
+        "source": "nghttp2",
+        "sourceVersion": "1.59.0-1ubuntu0.4",
+        "version": "1.59.0-1ubuntu0.4"
+      },
+      {
+        "package": "libnpth0t64",
+        "source": "npth",
+        "sourceVersion": "1.6-3.1build1",
+        "version": "1.6-3.1build1"
+      },
+      {
+        "package": "libonig5",
+        "source": "libonig",
+        "sourceVersion": "6.9.9-1build1",
+        "version": "6.9.9-1build1"
+      },
+      {
+        "package": "libp11-kit0",
+        "source": "p11-kit",
+        "sourceVersion": "0.25.3-4ubuntu2.2",
+        "version": "0.25.3-4ubuntu2.2"
+      },
+      {
+        "package": "libpam-modules",
+        "source": "pam",
+        "sourceVersion": "1.5.3-5ubuntu5.7",
+        "version": "1.5.3-5ubuntu5.7"
+      },
+      {
+        "package": "libpam-modules-bin",
+        "source": "pam",
+        "sourceVersion": "1.5.3-5ubuntu5.7",
+        "version": "1.5.3-5ubuntu5.7"
+      },
+      {
+        "package": "libpam-runtime",
+        "source": "pam",
+        "sourceVersion": "1.5.3-5ubuntu5.7",
+        "version": "1.5.3-5ubuntu5.7"
+      },
+      {
+        "package": "libpam-systemd",
+        "source": "systemd",
+        "sourceVersion": "255.4-1ubuntu8.17",
+        "version": "255.4-1ubuntu8.17"
+      },
+      {
+        "package": "libpam0g",
+        "source": "pam",
+        "sourceVersion": "1.5.3-5ubuntu5.7",
+        "version": "1.5.3-5ubuntu5.7"
+      },
+      {
+        "package": "libpcre2-8-0",
+        "source": "pcre2",
+        "sourceVersion": "10.42-4ubuntu2.1",
+        "version": "10.42-4ubuntu2.1"
+      },
+      {
+        "package": "libproc2-0",
+        "source": "procps",
+        "sourceVersion": "2:4.0.4-4ubuntu3.3",
+        "version": "2:4.0.4-4ubuntu3.3"
+      },
+      {
+        "package": "libpsl5t64",
+        "source": "libpsl",
+        "sourceVersion": "0.21.2-1.1build1",
+        "version": "0.21.2-1.1build1"
+      },
+      {
+        "package": "libreadline8t64",
+        "source": "readline",
+        "sourceVersion": "8.2-4build1",
+        "version": "8.2-4build1"
+      },
+      {
+        "package": "librtmp1",
+        "source": "rtmpdump",
+        "sourceVersion": "2.4+20151223.gitfa8646d.1-2build7",
+        "version": "2.4+20151223.gitfa8646d.1-2build7"
+      },
+      {
+        "package": "libsasl2-2",
+        "source": "cyrus-sasl2",
+        "sourceVersion": "2.1.28+dfsg1-5ubuntu3.1",
+        "version": "2.1.28+dfsg1-5ubuntu3.1"
+      },
+      {
+        "package": "libsasl2-modules-db",
+        "source": "cyrus-sasl2",
+        "sourceVersion": "2.1.28+dfsg1-5ubuntu3.1",
+        "version": "2.1.28+dfsg1-5ubuntu3.1"
+      },
+      {
+        "package": "libseccomp2",
+        "source": "libseccomp",
+        "sourceVersion": "2.5.5-1ubuntu3.1",
+        "version": "2.5.5-1ubuntu3.1"
+      },
+      {
+        "package": "libselinux1",
+        "source": "libselinux",
+        "sourceVersion": "3.5-2ubuntu2.1",
+        "version": "3.5-2ubuntu2.1"
+      },
+      {
+        "package": "libsemanage-common",
+        "source": "libsemanage",
+        "sourceVersion": "3.5-1build5",
+        "version": "3.5-1build5"
+      },
+      {
+        "package": "libsemanage2",
+        "source": "libsemanage",
+        "sourceVersion": "3.5-1build5",
+        "version": "3.5-1build5"
+      },
+      {
+        "package": "libsepol2",
+        "source": "libsepol",
+        "sourceVersion": "3.5-2build1",
+        "version": "3.5-2build1"
+      },
+      {
+        "package": "libsigsegv2",
+        "source": "libsigsegv",
+        "sourceVersion": "2.14-1ubuntu2",
+        "version": "2.14-1ubuntu2"
+      },
+      {
+        "package": "libsmartcols1",
+        "source": "util-linux",
+        "sourceVersion": "2.39.3-9ubuntu6.6",
+        "version": "2.39.3-9ubuntu6.6"
+      },
+      {
+        "package": "libsqlite3-0",
+        "source": "sqlite3",
+        "sourceVersion": "3.45.1-1ubuntu2.8",
+        "version": "3.45.1-1ubuntu2.8"
+      },
+      {
+        "package": "libss2",
+        "source": "e2fsprogs",
+        "sourceVersion": "1.47.0-2.4~exp1ubuntu4.1",
+        "version": "1.47.0-2.4~exp1ubuntu4.1"
+      },
+      {
+        "package": "libssh-4",
+        "source": "libssh",
+        "sourceVersion": "0.10.6-2ubuntu0.5",
+        "version": "0.10.6-2ubuntu0.5"
+      },
+      {
+        "package": "libssl3t64",
+        "source": "openssl",
+        "sourceVersion": "3.0.13-0ubuntu3.16",
+        "version": "3.0.13-0ubuntu3.16"
+      },
+      {
+        "package": "libstdc++6",
+        "source": "gcc-14",
+        "sourceVersion": "14.2.0-4ubuntu2~24.04.1",
+        "version": "14.2.0-4ubuntu2~24.04.1"
+      },
+      {
+        "package": "libsystemd-shared",
+        "source": "systemd",
+        "sourceVersion": "255.4-1ubuntu8.17",
+        "version": "255.4-1ubuntu8.17"
+      },
+      {
+        "package": "libsystemd0",
+        "source": "systemd",
+        "sourceVersion": "255.4-1ubuntu8.17",
+        "version": "255.4-1ubuntu8.17"
+      },
+      {
+        "package": "libtasn1-6",
+        "source": "libtasn1-6",
+        "sourceVersion": "4.19.0-3ubuntu0.24.04.2",
+        "version": "4.19.0-3ubuntu0.24.04.2"
+      },
+      {
+        "package": "libtinfo6",
+        "source": "ncurses",
+        "sourceVersion": "6.4+20240113-1ubuntu2.2",
+        "version": "6.4+20240113-1ubuntu2.2"
+      },
+      {
+        "package": "libudev1",
+        "source": "systemd",
+        "sourceVersion": "255.4-1ubuntu8.17",
+        "version": "255.4-1ubuntu8.17"
+      },
+      {
+        "package": "libunistring5",
+        "source": "libunistring",
+        "sourceVersion": "1.1-2build1.1",
+        "version": "1.1-2build1.1"
+      },
+      {
+        "package": "libuuid1",
+        "source": "util-linux",
+        "sourceVersion": "2.39.3-9ubuntu6.6",
+        "version": "2.39.3-9ubuntu6.6"
+      },
+      {
+        "package": "libuv1t64",
+        "source": "libuv1",
+        "sourceVersion": "1.48.0-1.1build1",
+        "version": "1.48.0-1.1build1"
+      },
+      {
+        "package": "libxml2",
+        "source": "libxml2",
+        "sourceVersion": "2.9.14+dfsg-1.3ubuntu3.9",
+        "version": "2.9.14+dfsg-1.3ubuntu3.9"
+      },
+      {
+        "package": "libxtables12",
+        "source": "iptables",
+        "sourceVersion": "1.8.10-3ubuntu2",
+        "version": "1.8.10-3ubuntu2"
+      },
+      {
+        "package": "libxxhash0",
+        "source": "xxhash",
+        "sourceVersion": "0.8.2-2build1",
+        "version": "0.8.2-2build1"
+      },
+      {
+        "package": "libzstd1",
+        "source": "libzstd",
+        "sourceVersion": "1.5.5+dfsg2-2build1.1",
+        "version": "1.5.5+dfsg2-2build1.1"
+      },
+      {
+        "package": "login",
+        "source": "shadow",
+        "sourceVersion": "1:4.13+dfsg1-4ubuntu3.2",
+        "version": "1:4.13+dfsg1-4ubuntu3.2"
+      },
+      {
+        "package": "logsave",
+        "source": "e2fsprogs",
+        "sourceVersion": "1.47.0-2.4~exp1ubuntu4.1",
+        "version": "1.47.0-2.4~exp1ubuntu4.1"
+      },
+      {
+        "package": "mawk",
+        "source": "mawk",
+        "sourceVersion": "1.3.4.20240123-1build1",
+        "version": "1.3.4.20240123-1build1"
+      },
+      {
+        "package": "mount",
+        "source": "util-linux",
+        "sourceVersion": "2.39.3-9ubuntu6.6",
+        "version": "2.39.3-9ubuntu6.6"
+      },
+      {
+        "package": "ncurses-base",
+        "source": "ncurses",
+        "sourceVersion": "6.4+20240113-1ubuntu2.2",
+        "version": "6.4+20240113-1ubuntu2.2"
+      },
+      {
+        "package": "ncurses-bin",
+        "source": "ncurses",
+        "sourceVersion": "6.4+20240113-1ubuntu2.2",
+        "version": "6.4+20240113-1ubuntu2.2"
+      },
+      {
+        "package": "netbase",
+        "source": "netbase",
+        "sourceVersion": "6.4",
+        "version": "6.4"
+      },
+      {
+        "package": "netcat-openbsd",
+        "source": "netcat-openbsd",
+        "sourceVersion": "1.226-1ubuntu2",
+        "version": "1.226-1ubuntu2"
+      },
+      {
+        "package": "nftables",
+        "source": "nftables",
+        "sourceVersion": "1.0.9-1ubuntu0.1",
+        "version": "1.0.9-1ubuntu0.1"
+      },
+      {
+        "package": "openssl",
+        "source": "openssl",
+        "sourceVersion": "3.0.13-0ubuntu3.16",
+        "version": "3.0.13-0ubuntu3.16"
+      },
+      {
+        "package": "passwd",
+        "source": "shadow",
+        "sourceVersion": "1:4.13+dfsg1-4ubuntu3.2",
+        "version": "1:4.13+dfsg1-4ubuntu3.2"
+      },
+      {
+        "package": "perl-base",
+        "source": "perl",
+        "sourceVersion": "5.38.2-3.2ubuntu0.6",
+        "version": "5.38.2-3.2ubuntu0.6"
+      },
+      {
+        "package": "pinentry-curses",
+        "source": "pinentry",
+        "sourceVersion": "1.2.1-3ubuntu5",
+        "version": "1.2.1-3ubuntu5"
+      },
+      {
+        "package": "procps",
+        "source": "procps",
+        "sourceVersion": "2:4.0.4-4ubuntu3.3",
+        "version": "2:4.0.4-4ubuntu3.3"
+      },
+      {
+        "package": "readline-common",
+        "source": "readline",
+        "sourceVersion": "8.2-4build1",
+        "version": "8.2-4build1"
+      },
+      {
+        "package": "sed",
+        "source": "sed",
+        "sourceVersion": "4.9-2ubuntu0.24.04.1",
+        "version": "4.9-2ubuntu0.24.04.1"
+      },
+      {
+        "package": "sensible-utils",
+        "source": "sensible-utils",
+        "sourceVersion": "0.0.22",
+        "version": "0.0.22"
+      },
+      {
+        "package": "systemd",
+        "source": "systemd",
+        "sourceVersion": "255.4-1ubuntu8.17",
+        "version": "255.4-1ubuntu8.17"
+      },
+      {
+        "package": "systemd-dev",
+        "source": "systemd",
+        "sourceVersion": "255.4-1ubuntu8.17",
+        "version": "255.4-1ubuntu8.17"
+      },
+      {
+        "package": "systemd-sysv",
+        "source": "systemd",
+        "sourceVersion": "255.4-1ubuntu8.17",
+        "version": "255.4-1ubuntu8.17"
+      },
+      {
+        "package": "sysvinit-utils",
+        "source": "sysvinit",
+        "sourceVersion": "3.08-6ubuntu3",
+        "version": "3.08-6ubuntu3"
+      },
+      {
+        "package": "tar",
+        "source": "tar",
+        "sourceVersion": "1.35+dfsg-3ubuntu0.4",
+        "version": "1.35+dfsg-3ubuntu0.4"
+      },
+      {
+        "package": "ubuntu-keyring",
+        "source": "ubuntu-keyring",
+        "sourceVersion": "2023.11.28.1",
+        "version": "2023.11.28.1"
+      },
+      {
+        "package": "unminimize",
+        "source": "unminimize",
+        "sourceVersion": "0.2.1",
+        "version": "0.2.1"
+      },
+      {
+        "package": "util-linux",
+        "source": "util-linux",
+        "sourceVersion": "2.39.3-9ubuntu6.6",
+        "version": "2.39.3-9ubuntu6.6"
+      },
+      {
+        "package": "xz-utils",
+        "source": "xz-utils",
+        "sourceVersion": "5.6.1+really5.4.5-1ubuntu0.3",
+        "version": "5.6.1+really5.4.5-1ubuntu0.3"
+      },
+      {
+        "package": "zlib1g",
+        "source": "zlib",
+        "sourceVersion": "1:1.3.dfsg-3.1ubuntu2.2",
+        "version": "1:1.3.dfsg-3.1ubuntu2.2"
+      },
+      {
+        "package": "busybox-static",
+        "shippedIn": "guest tools",
+        "source": "busybox",
+        "sourceVersion": "1:1.36.1-6ubuntu3.1",
+        "version": "1:1.36.1-6ubuntu3.1"
+      },
+      {
+        "package": "libc6-dev",
+        "shippedIn": "guest tools",
+        "source": "glibc",
+        "sourceVersion": "2.39-0ubuntu8.9",
+        "version": "2.39-0ubuntu8.9"
+      }
+    ],
+    "snapshot": "20261006T120000Z"
+  }
+}

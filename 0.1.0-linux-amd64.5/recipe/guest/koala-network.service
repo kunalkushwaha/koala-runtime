@@ -1,0 +1,14 @@
+[Unit]
+Description=Install Koala guest resolver configuration
+DefaultDependencies=no
+After=systemd-remount-fs.service
+Before=network-pre.target systemd-networkd.service docker.service
+Wants=network-pre.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/cp --remove-destination /etc/koala/resolv.conf /etc/resolv.conf
+RemainAfterExit=yes
+
+[Install]
+WantedBy=sysinit.target
