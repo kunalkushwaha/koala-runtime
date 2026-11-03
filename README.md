@@ -49,6 +49,20 @@ runtime: download the files listed there and check them with
 `sha256sum -c SHA256SUMS`. If a file is missing or a link stops working,
 open an issue in this repository.
 
+## Credits
+
+The runtimes are built on others' work:
+- **[Kata Containers](https://github.com/kata-containers/kata-containers)**:
+  the lean kernel's configuration starts from Kata 3.17.0's kernel config
+  fragments (Apache-2.0, kept with their licence in each recipe), and its
+  approach to small, fast VM kernels guided ours.
+- **[Apple's containerization](https://github.com/apple/containerization)**:
+  `vminitd`, `vmexec`, and the full kernel's base configuration and build
+  script (Apache-2.0).
+- **[The Linux kernel](https://kernel.org)**, **[Ubuntu](https://ubuntu.com)**,
+  **[Alpine Linux](https://alpinelinux.org)** and
+  **[busybox](https://busybox.net)**, whose software the runtimes contain.
+
 ## Licence
 
 Each component keeps its own licence, given in `SOURCES.md` and in the
