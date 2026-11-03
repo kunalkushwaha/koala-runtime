@@ -1,0 +1,55 @@
+# R05B1 on the Mac (MAC08, #322): Koala's additions for the arm64 lean
+# kernel, merged after Kata 3.17.0's fragments (kernel/kata-3.17.0) onto
+# allnoconfig by build-lean-kernel.sh arm64. Virtualization.framework boots
+# the kernel's Image.
+#
+# Devices: Kata's set already has what Virtualization.framework attaches
+# (virtio PCI, block, net, console, vsock, virtio-fs, balloon, entropy,
+# PL011, PL031), so nothing is added for them. Unlike Cloud Hypervisor, it
+# doesn't add devices to a running guest: no PCI or CPU hotplug.
+#
+# On arm64, build-lean-kernel.sh fails unless every option set =y here is on
+# in the build: a renamed or unmet option would otherwise drop out silently.
+#
+# CPU vulnerability mitigations, the same set as the full profile's kernel.
+# On in Kata's shipped 6.12 kernel without being in its fragments; required
+# here by name.
+CONFIG_CPU_MITIGATIONS=y
+CONFIG_UNMAP_KERNEL_AT_EL0=y
+CONFIG_MITIGATE_SPECTRE_BRANCH_HISTORY=y
+# Hardening at least as strong as the full profile's arm64 kernel
+# (containerization's config-arm64; its 29 options, #322). Kata's shipped
+# kernel lacks the pointer authentication, BTI, MTE and slab/list ones.
+CONFIG_ARM64_PAN=y
+CONFIG_ARM64_EPAN=y
+CONFIG_ARM64_E0PD=y
+CONFIG_ARM64_PTR_AUTH=y
+CONFIG_ARM64_PTR_AUTH_KERNEL=y
+CONFIG_ARM64_BTI=y
+CONFIG_ARM64_MTE=y
+# MTE depends on the tagged-address ABI, which allnoconfig leaves off
+# (MAC08's first build: MTE was off without it).
+CONFIG_ARM64_TAGGED_ADDR_ABI=y
+CONFIG_ARM64_GCS=y
+CONFIG_ARM64_POE=y
+CONFIG_ARM64_USE_LSE_ATOMICS=y
+CONFIG_RANDOMIZE_BASE=y
+CONFIG_RANDOMIZE_KSTACK_OFFSET=y
+CONFIG_STACKPROTECTOR=y
+CONFIG_STACKPROTECTOR_STRONG=y
+CONFIG_STACKPROTECTOR_PER_TASK=y
+CONFIG_FORTIFY_SOURCE=y
+CONFIG_SLAB_FREELIST_HARDENED=y
+CONFIG_LIST_HARDENED=y
+CONFIG_BUG_ON_DATA_CORRUPTION=y
+CONFIG_STRICT_KERNEL_RWX=y
+CONFIG_VMAP_STACK=y
+CONFIG_SECCOMP=y
+CONFIG_SECCOMP_FILTER=y
+# R05B1's check requires it on both platforms; the full arm64 kernel lacks it.
+CONFIG_HARDENED_USERCOPY=y
+# Not carried from the full kernel: INIT_STACK_NONE (a choice, not
+# hardening), RANDOMIZE_MODULE_REGION_FULL (this kernel has no modules),
+# DEBUG_LIST (it needs DEBUG_KERNEL, which Kata's recipe and the x86_64
+# fragment keep off; LIST_HARDENED, its hardening part, is on), and 34 CPU
+# errata workarounds for other vendors' cores (Kata's 10 stay).

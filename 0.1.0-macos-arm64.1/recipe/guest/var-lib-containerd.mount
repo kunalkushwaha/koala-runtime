@@ -1,0 +1,13 @@
+[Unit]
+Description=Koala managed containerd data
+Before=containerd.service docker.service
+After=local-fs-pre.target
+
+[Mount]
+What=/var/lib/koala-engine/containerd
+Where=/var/lib/containerd
+Type=none
+Options=bind
+
+[Install]
+WantedBy=local-fs.target

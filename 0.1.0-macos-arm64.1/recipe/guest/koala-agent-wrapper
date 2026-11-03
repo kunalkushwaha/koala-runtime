@@ -1,0 +1,32 @@
+#!/bin/bash
+set -euo pipefail
+
+root=/mnt/koala-host/root
+mkdir -p "$root" "$root/run" "$root/proc" "$root/sys" "$root/dev"
+mount --bind / "$root"
+mount --make-private "$root"
+mount --rbind /run "$root/run"
+mount --make-rprivate "$root/run"
+mount --rbind /proc "$root/proc"
+mount --make-rprivate "$root/proc"
+mount --rbind /sys "$root/sys"
+mount --make-rprivate "$root/sys"
+mount --rbind /dev "$root/dev"
+mount --make-rprivate "$root/dev"
+# vminitd owns /sys and /sys/fs/cgroup in its private service namespace.
+# The original systemd view remains reachable through the saved root above.
+for _ in $(seq 1 16); do
+  mountpoint --quiet /sys || break
+  umount --lazy /sys
+done
+mkdir -p /sys
+if mountpoint --quiet /sys; then
+  echo "koala-agent-wrapper: /sys is still mounted" >&2
+  findmnt -R /sys >&2 || true
+  exit 1
+fi
+# The release vminitd process supervisor assumes PID 1's child-reaping
+# behavior. Mark it as a child subreaper before exec so detached vmexec
+# processes return to vminitd while all commands stay in systemd's PID
+# namespace.
+exec /usr/local/sbin/koala-subreaper /sbin/vminitd agent

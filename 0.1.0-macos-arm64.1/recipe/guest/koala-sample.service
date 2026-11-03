@@ -1,0 +1,11 @@
+[Unit]
+Description=Koala F08 sample service
+After=local-fs.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash -c 'while :; do date -u +%%FT%%TZ > /var/lib/koala-sample/heartbeat; sleep 1; done'
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

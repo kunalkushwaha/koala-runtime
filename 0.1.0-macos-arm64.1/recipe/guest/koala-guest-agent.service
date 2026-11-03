@@ -1,0 +1,22 @@
+[Unit]
+Description=Koala guest control agent
+# Wants, not Requires: a broker restart must not restart the agent and its
+# control container (W01D). After= keeps the start order.
+Wants=koala-host-exec.service
+After=local-fs.target systemd-remount-fs.service koala-host-exec.service
+Before=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/sbin/koala-agent-wrapper
+Restart=on-failure
+RestartSec=1s
+PrivateMounts=yes
+Delegate=yes
+LimitNOFILE=1048576
+OOMScoreAdjust=-900
+StandardOutput=journal+console
+StandardError=journal+console
+
+[Install]
+WantedBy=multi-user.target

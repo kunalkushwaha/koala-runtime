@@ -1,0 +1,137 @@
+#!/bin/sh
+# Locked package installation for the runtime build (R01A).
+#
+#   koala-apt resolve STAGE   In a fresh pinned base container with network:
+#                             install STAGE's package lists unpinned and print
+#                             the lock lines for every package added.
+#                             With KOALA_APT_SNAPSHOT=YYYYMMDDTHHMMSSZ the Ubuntu
+#                             archive is snapshot.ubuntu.com at that time, so a
+#                             lock resolved later (or for another architecture)
+#                             gets the same versions; it needs a CA bundle
+#                             mounted at /run/koala-ca.crt.
+#   koala-apt install STAGE   In the image build, offline: verify the
+#                             predownloaded files of STAGE against the lock,
+#                             install exactly those, and fail on anything else.
+#
+# Lock lines (tab separated): stage package version architecture sha256
+# filename origin. origin is "ubuntu" (the Ubuntu archive: ports for arm64,
+# archive/security for amd64) or "docker".
+set -eu
+export DEBIAN_FRONTEND=noninteractive
+DIR="$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)"
+TAB="$(printf '\t')"
+
+lists() {
+  case "$1" in
+    builder) echo "$DIR/packages-builder.txt" ;;
+    root) echo "$DIR/packages-root.txt $DIR/packages-docker.txt" ;;
+    *) echo "unknown stage: $1" >&2; exit 2 ;;
+  esac
+}
+
+installed() { dpkg-query -W -f='${Package}\t${Version}\t${Architecture}\n' | LC_ALL=C sort; }
+
+no_service_starts() {
+  printf '#!/bin/sh\nexit 101\n' >/usr/sbin/policy-rc.d
+  chmod 0755 /usr/sbin/policy-rc.d
+}
+
+docker_source() {
+  install -m 0755 -d /etc/apt/keyrings
+  install -m 0644 "$DIR/docker.asc" /etc/apt/keyrings/docker.asc
+  printf '%s\n' 'Types: deb' 'URIs: https://download.docker.com/linux/ubuntu' 'Suites: noble' \
+    'Components: stable' "Architectures: $(dpkg --print-architecture)" 'Signed-By: /etc/apt/keyrings/docker.asc' \
+    >/etc/apt/sources.list.d/docker.sources
+}
+
+snapshot_sources() {
+  [ -n "${KOALA_APT_SNAPSHOT:-}" ] || return 0
+  # The snapshot service has one archive for every architecture,
+  # /ubuntu/ (arm64 included); it has no /ubuntu-ports/ (L02D, issue #31).
+  sed -i -E "s#^URIs: http://(archive|security|ports)\.ubuntu\.com/ubuntu(-ports)?/?\$#URIs: https://snapshot.ubuntu.com/ubuntu/$KOALA_APT_SNAPSHOT/#" \
+    /etc/apt/sources.list.d/ubuntu.sources
+  if grep -Eq '^URIs: http://' /etc/apt/sources.list.d/ubuntu.sources; then
+    echo "koala-apt: a source is not on the snapshot" >&2; exit 1
+  fi
+  # The base image has no CA bundle; the caller lends one at this path.
+  [ -s /run/koala-ca.crt ] || { echo "koala-apt: no CA bundle at /run/koala-ca.crt" >&2; exit 1; }
+  echo 'Acquire::https::CaInfo "/run/koala-ca.crt";' >/etc/apt/apt.conf.d/99koala-snapshot
+}
+
+resolve() {
+  stage="$1"; installed >/tmp/koala-before
+  snapshot_sources
+  [ "$stage" = root ] && no_service_starts
+  apt-get update -qq
+  for list in $(lists "$stage"); do
+    if [ "$list" = "$DIR/packages-docker.txt" ]; then docker_source; apt-get update -qq; fi
+    # shellcheck disable=SC2046
+    apt-get install -y -qq --no-install-recommends $(grep -v '^#' "$list") >/dev/null
+  done
+  installed | LC_ALL=C comm -13 /tmp/koala-before - | while IFS="$TAB" read -r name version arch; do
+    apt-cache show "$name:$arch=$version" 2>/dev/null | awk -v RS= -v stage="$stage" \
+      -v name="$name" -v version="$version" -v arch="$arch" '
+      { file = ""; sha = "";
+        n = split($0, lines, "\n");
+        for (i = 1; i <= n; i++) {
+          if (lines[i] ~ /^Filename: /) file = substr(lines[i], 11);
+          if (lines[i] ~ /^SHA256: /) sha = substr(lines[i], 9);
+        }
+        if (file != "" && sha != "") {
+          origin = (file ~ /^dists\/noble\/pool\/stable\//) ? "docker" : "ubuntu";
+          printf "%s\t%s\t%s\t%s\t%s\t%s\t%s\n", stage, name, version, arch, sha, file, origin;
+          exit;
+        }
+      }
+      END { if (file == "" || sha == "") { print "no archive record for " name " " version > "/dev/stderr"; exit 1 } }'
+  done
+}
+
+install_locked() {
+  stage="$1"; lock="$DIR/runtime-packages.lock"; debs="$DIR/debs"
+  awk -F "$TAB" -v s="$stage" '$1 == s' "$lock" >/tmp/koala-stage.lock
+  [ -s /tmp/koala-stage.lock ] || { echo "koala-apt: no lock entries for $stage" >&2; exit 1; }
+  # A list change without a regenerated lock must fail, not be ignored.
+  for list in $(lists "$stage"); do
+    grep -v '^#' "$list" | while read -r wanted; do
+      [ -n "$wanted" ] || continue
+      name="${wanted%%=*}"; version=""; [ "$name" = "$wanted" ] || version="${wanted#*=}"
+      # Either locked, or already in the pinned base image.
+      awk -F "$TAB" -v n="$name" -v v="$version" '$2 == n && (v == "" || $3 == v) { found = 1 } END { exit !found }' \
+        /tmp/koala-stage.lock ||
+        dpkg-query -W -f='${Version}\n' "$name" 2>/dev/null | grep -qx "${version:-.*}" || { echo "koala-apt: $wanted is in $(basename "$list") but not in the $stage lock; run runtime_packages.py update-lock" >&2; exit 1; }
+    done
+  done
+  installed >/tmp/koala-before
+  [ "$stage" = root ] && no_service_starts
+  for origin in ubuntu docker; do
+    files=""
+    while IFS="$TAB" read -r _ name version _ sha file entry_origin; do
+      [ "$entry_origin" = "$origin" ] || continue
+      path="$debs/$(basename "$file")"
+      [ -f "$path" ] || { echo "koala-apt: missing $path for $name $version" >&2; exit 1; }
+      echo "$sha  $path" | sha256sum -c --quiet - ||
+        { echo "koala-apt: SHA-256 mismatch for $name $version" >&2; exit 1; }
+      files="$files $path"
+    done </tmp/koala-stage.lock
+    [ -n "$files" ] || continue
+    # Only these files: no package lists exist, so apt cannot fetch anything else.
+    # shellcheck disable=SC2086
+    apt-get install -y -qq --no-install-recommends -o Dir::Etc::SourceList=/dev/null \
+      -o Dir::Etc::SourceParts=/nonexistent $files >/dev/null
+  done
+  [ "$stage" = root ] && docker_source
+  installed | LC_ALL=C comm -13 /tmp/koala-before - | cut -f1,2 >/tmp/koala-added
+  cut -f2,3 /tmp/koala-stage.lock | LC_ALL=C sort >/tmp/koala-expected
+  if ! LC_ALL=C sort /tmp/koala-added | cmp -s - /tmp/koala-expected; then
+    echo "koala-apt: installed packages differ from the $stage lock:" >&2
+    LC_ALL=C sort /tmp/koala-added | diff /tmp/koala-expected - >&2 || true
+    exit 1
+  fi
+}
+
+case "${1:-}" in
+  resolve) resolve "$2" ;;
+  install) install_locked "$2" ;;
+  *) echo "usage: koala-apt resolve|install builder|root" >&2; exit 2 ;;
+esac

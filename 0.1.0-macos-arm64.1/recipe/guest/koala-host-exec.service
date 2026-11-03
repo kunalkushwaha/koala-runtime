@@ -1,0 +1,21 @@
+[Unit]
+Description=Koala full-guest command broker
+After=local-fs.target
+Before=koala-guest-agent.service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/sbin/koala-host-exec server
+Restart=on-failure
+RestartSec=1s
+# Full-profile executions run as this service's children (W01D): a broker
+# restart must not kill them, and service defaults must not limit them.
+KillMode=process
+TasksMax=infinity
+LimitNOFILE=1048576
+RuntimeDirectory=koala
+StandardOutput=journal+console
+StandardError=journal+console
+
+[Install]
+WantedBy=multi-user.target
